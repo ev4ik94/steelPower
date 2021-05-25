@@ -16,35 +16,45 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="header__logo" href="#">
                         <img src="./img/logo.svg" alt="">
                     </a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">О нас</a>
+                                <a class="header__link" href="#">О нас</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Сотрудничество</a>
+                                <a class="header__link" href="#">Сотрудничество</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">SP-TEAM</a>
+                                <a class="header__link" href="#">SP-TEAM</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Доставка и оплата</a>
+                                <a class="header__link" href="#">Доставка и оплата</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div><img src="./img/user.svg" alt=""></div>
-                        <button>Войти</button>
+                <div class="authorization">
+                    <div class="authorization__info">
+                        <div class="authorization__login_img">
+                            <img src="./img/user.svg" alt="">
+                        </div>
+                        <div class="authorization__login">
+                            <button>Войти</button>
+                        </div>
+                        <span>/</span>
+                        <div class="authorization__register">
+                            <button>Зарегистрироваться</button>
+                        </div>
                     </div>
-                    <span>/</span>
-                    <div>
-                        <button>Зарегистрироваться</button>
-                    </div>
+                    <button class="authorization__basket">
+                        <div class="authorization__basket_img">
+                            <img src="./img/basket.svg" alt="">
+                        </div>
+                        <p class="authorization__basket_text">Коризна</p>
+                    </button>
                 </div>
             </nav>
         </div>
