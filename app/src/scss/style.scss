@@ -1,13 +1,20 @@
 @charset "UTF-8";
 @import "./variables";
 @import './node_modules/bootstrap/scss/bootstrap';
-@import "./components/header";
+@import "./components/main-components/header";
+@import "./components/home/banner";
+@import "./components/home/category";
+@import "./components/home/lider";
 
 
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: 'HelveticaNeueCyr', 'sans-serif'!important;
 }
 
 
@@ -19,5 +26,49 @@ button{
 
 h1 {
   color: $main;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*=============FONTS=================*/
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url(../fonts/helveticaneuecyr-black.ttf), format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url(../fonts/helveticaneuecyr-bold.ttf), format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url(../fonts/helveticaneuecyr-medium1.ttf), format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url(../fonts/helveticaneuecyr-light.ttf), format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url(../fonts/helveticaneuecyr-thin.ttf), format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
