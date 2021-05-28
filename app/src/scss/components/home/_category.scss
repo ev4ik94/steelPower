@@ -8,9 +8,8 @@
         box-sizing: border-box;
         border-radius: 10px;
         height: 130px;
-        width: 207px;
         text-decoration: none;
-        margin-bottom: 10px;
+        margin: 10px 10px;
     }
 
     &__text {
@@ -38,5 +37,12 @@
         font-weight: 700;
         color: $black;
         background: $main;
+    }
+
+    &__img{
+        width: 50%;
+        margin-left: auto;
+        border-radius: 0px 0px 0px 50px;
+        overflow: hidden;
     }
 }
