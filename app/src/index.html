@@ -75,35 +75,81 @@
     <main>
         <div class="container-fluid">
             <!----------------------HOME BANNER START--------------------->
-            <section class="banner d-flex justify-content-between">
-                <div class="banner__block position-relative">
-                    <div class="banner__block_img">
-                        <img src="./img/banner.png" alt="">
-                    </div>
-                    <button class="banner__block_left"><img src="./img/slick-left.svg" alt=""></button>
-                    <button class="banner__block_right"><img src="./img/slick-right.svg" alt=""></button>
-                </div>
-                <div class="banner__product">
-                    <div class="banner__item d-flex position-relative">
-                        <div class="banner__item_img">
-                            <img src="./img/Product of the day.png" alt="">
+            <section class="banner d-flex flex-wrap justify-content-between">
+                <div class="col-lg-9">
+                    <div class="banner__block position-relative" id="banner-home">
+                        <div class="banner__block_img">
+                            <img src="./img/banner.png" alt="">
                         </div>
-                        <p class="banner__item_text">Товар дня</p>
-                        <span
-                            class="banner__item_sp d-flex align-items-center justify-content-center position-absolute">-15%</span>
-                        <button class="banner__item_left position-absolute"><img src="./img/slick-left.svg"
-                                alt=""></button>
-                        <button class="banner__item_right position-absolute"><img src="./img/slick-right.svg"
-                                alt=""></button>
+                        <div class="banner__block_img">
+                            <img src="./img/banner.png" alt="">
+                        </div>
+                        <div class="banner__block_img">
+                            <img src="./img/banner.png" alt="">
+                        </div>
+                        
+                        
                     </div>
-                    <div class="banner__info">
-                        <h3 class="banner__info_title">FOR MASS GAINER</h3>
-                        <p class="banner__info_weight">1500 г.</p>
-                        <div class="banner__info_end d-flex justify-content-between">
-                            <span class="banner__info_price d-flex align-items-center">990 руб.</span>
-                            <button class="banner__info_btn">
-                                <img src="./img/basketPlus.svg" alt="">
-                            </button>
+                </div>
+                <div class="banner__product col-lg-3" id="product-slick">
+                    <div>
+                        <div class="banner__item d-flex position-relative">
+                            <div class="banner__item_img">
+                                <img src="./img/Product of the day.png" alt="">
+                            </div>
+                            <p class="banner__item_text">Товар дня</p>
+                            <span
+                                class="banner__item_sp d-flex align-items-center justify-content-center position-absolute">-15%</span>
+                        </div>
+                        <div class="banner__info">
+                            <h3 class="banner__info_title">FOR MASS GAINER</h3>
+                            <p class="banner__info_weight">1500 г.</p>
+                            <div class="banner__info_end d-flex justify-content-between">
+                                <span class="banner__info_price d-flex align-items-center">990 руб.</span>
+                                <button class="banner__info_btn">
+                                    <img src="./img/basketPlus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="banner__item d-flex position-relative">
+                            <div class="banner__item_img">
+                                <img src="./img/Product of the day.png" alt="">
+                            </div>
+                            <p class="banner__item_text">Товар дня</p>
+                            <span
+                                class="banner__item_sp d-flex align-items-center justify-content-center position-absolute">-15%</span>
+                        </div>
+                        <div class="banner__info">
+                            <h3 class="banner__info_title">FOR MASS GAINER</h3>
+                            <p class="banner__info_weight">1500 г.</p>
+                            <div class="banner__info_end d-flex justify-content-between">
+                                <span class="banner__info_price d-flex align-items-center">990 руб.</span>
+                                <button class="banner__info_btn">
+                                    <img src="./img/basketPlus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="banner__item d-flex position-relative">
+                            <div class="banner__item_img">
+                                <img src="./img/Product of the day.png" alt="">
+                            </div>
+                            <p class="banner__item_text">Товар дня</p>
+                            <span
+                                class="banner__item_sp d-flex align-items-center justify-content-center position-absolute">-15%</span>
+                        </div>
+                        <div class="banner__info">
+                            <h3 class="banner__info_title">FOR MASS GAINER</h3>
+                            <p class="banner__info_weight">1500 г.</p>
+                            <div class="banner__info_end d-flex justify-content-between">
+                                <span class="banner__info_price d-flex align-items-center">990 руб.</span>
+                                <button class="banner__info_btn">
+                                    <img src="./img/basketPlus.svg" alt="">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,7 +158,7 @@
 
             <!----------------------CATEGORIES START--------------------->
 
-            <section class="category d-flex flex-wrap  justify-content-start">
+            <section class="category d-lg-flex d-block flex-lg-wrap  justify-content-start" id="categories-home">
                 <div class="col-2">
                     <a href="#" class="category__link d-flex flex-column justify-content-between">
                         <div class="d-flex justify-content-between">
@@ -204,8 +250,8 @@
         <section class="lider">
             <h3 class="lider__title d-inline-block">Лидеры продаж</h3>
             <div class="position-relative">
-                <div class="lider__block d-flex justify-content-between">
-                    <div class="lider__info">
+                <div class="lider__block d-lg-block d-flex flex-wrap" id="lider-slick">
+                    <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img position-relative">
                             <div class="position-absolute not_available">
                                 <p>Нет в наличии</p>
@@ -221,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lider__info">
+                    <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img ">
                             <img src="./img/collagen-lider.png" alt="">
                         </div>
@@ -234,7 +280,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lider__info">
+                    <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img">
                             <img src="./img/collagen-lider.png" alt="">
                         </div>
@@ -247,7 +293,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lider__info">
+                    <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img">
                             <img src="./img/collagen-lider.png" alt="">
                         </div>
@@ -260,7 +306,75 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lider__info">
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between">
+                                <p class="lider__item_price d-flex align-items-center">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img position-relative">
+                            <div class="position-absolute not_available">
+                                <p>Нет в наличии</p>
+                            </div>
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between">
+                                <p class="lider__item_price d-flex align-items-center">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img ">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between">
+                                <p class="lider__item_price d-flex align-items-center">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between">
+                                <p class="lider__item_price d-flex align-items-center">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between">
+                                <p class="lider__item_price d-flex align-items-center">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img">
                             <img src="./img/collagen-lider.png" alt="">
                         </div>
@@ -274,14 +388,45 @@
                         </div>
                     </div>
                 </div>
-                <button class="lider__left position-absolute"><img src="./img/slick-left.svg" alt=""></button>
-                <button class="lider__right position-absolute"><img src="./img/slick-right.svg" alt=""></button>
+<!--                 <button class="lider__left position-absolute"><img src="./img/slick-left.svg" alt=""></button>
+                <button class="lider__right position-absolute"><img src="./img/slick-right.svg" alt=""></button> -->
+            </div>
+        </section>
+        <!----------------------OUR ADVANTAGES START--------------------->
+        <section class="advantage container-fluid">
+            <h3 class="advantage__title d-inline-block">Наши преимущества</h3>
+            <div class="d-flex justify-content-between">
+                <div class="advantage__block d-flex align-items-center">
+                    <div class="advantage__block_img d-flex justify-content-center align-items-center">
+                        <div class="advantage__img"><img src="./img/delivery.svg" alt=""></div>
+                    </div>
+                    <div class="advantage__block_desc">
+                        <p class="advantage__text">Удобная доставка</p>
+                    </div>
+                </div>
+                <div class="advantage__block d-flex align-items-center">
+                    <div class="advantage__block_img d-flex justify-content-center align-items-center">
+                        <div class="advantage__img"><img src="./img/best-price.svg" alt=""></div>
+                    </div>
+                    <div class="advantage__block_desc">
+                        <p class="advantage__text">Лучшая цена</p>
+                    </div>
+                </div>
+                <div class="advantage__block d-flex align-items-center">
+                    <div class="advantage__block_img d-flex justify-content-center align-items-center">
+                        <div class="advantage__img"><img src="./img/bonus-program.svg" alt=""></div>
+                    </div>
+                    <div class="advantage__block_desc">
+                        <p class="advantage__text">Бонусная программа</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer></footer>
-
+    
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
