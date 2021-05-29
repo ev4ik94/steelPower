@@ -19,9 +19,9 @@
     <!----------------------NAVBAR START--------------------->
     <header>
         <div class="container-fluid">
-            <nav class="navbar navbar-light navbar-expand-lg">
+            <nav class="navbar flex-md-nowrap navbar-light navbar-expand-lg">
                 <div class="container-fluid ps-0">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar__button_tog" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@
                         <div class="authorization__login">
                             <button>Войти</button>
                         </div>
-                        <span>/</span>
+                        <span class="authorization__sp">/</span>
                         <div class="authorization__register">
                             <button>Зарегистрироваться</button>
                         </div>
@@ -66,12 +66,20 @@
                         </div>
                         <p class="authorization__basket_text">Коризна</p>
                     </button>
+                    
+                    <button class="authorization__mob_basket position-relative">
+                        <div class="authorization__mob_img">
+                            <img src="./img/basket.svg" alt="">
+                        </div>
+                        <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
+                    </button>
                 </div>
             </nav>
-
         </div>
     </header>
     <!----------------------NAVBAR END--------------------->
+    
+    <!----------------------MAIN START--------------------->
     <main>
         <div class="container-fluid">
             <!----------------------HOME BANNER START--------------------->
@@ -422,9 +430,27 @@
                 </div>
             </div>
         </section>
+        <!----------------------OUR ADVANTAGES END--------------------->
     </main>
-    <footer></footer>
+    <!----------------------MAIN END--------------------->
     
+    <!----------------------FOOTER START--------------------->
+    <footer class="footer">
+        <div class="footer__block container-fluid d-flex justify-content-between align-items-center">
+            <p class="footer__text">Производитель: ООО "Стил Пауэр Нутришн" г.Пермь, ул.Героев Хасана, 105, корп. 17/3</p>
+            <div class="footer__info d-flex">
+                <div class="footer__social d-flex align-items-center">
+                    <a href="#"><img src="./img/social-vk.svg" alt=""></a>
+                    <a href="#"><img src="./img/social-inst.svg" alt=""></a>
+                </div>
+                <div class="footer__link d-flex flex-column">
+                    <a href="tel:89258388885">8-925-83-888-85</a>
+                    <a href="mailto:sales@steelmuscles.ru">sales@steelmuscles.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------FOOTER END--------------------->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>

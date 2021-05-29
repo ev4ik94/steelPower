@@ -53,6 +53,7 @@ header {
 
     &__register {
         margin-right: 20px;
+
         & button {
             font-size: 16px;
             line-height: 16px;
@@ -96,5 +97,76 @@ header {
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    &__mob_basket {
+        display: none;
+        border: none;
+        background: transparent;
+    }
+
+    &__mob_img {
+        width: 23px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__mob_text {
+        font-size: 8px;
+        line-height: 8px;
+        font-weight: 700;
+        color: $black;
+        width: 16px;
+        height: 15px;
+        background: $white;
+        border-radius: 50%;
+        left: 15px;
+        bottom: 12px;
+    }
+}
+
+.navbar__button_tog {
+    display: none;
+    border: none;
+    background-color: transparent;
+    margin-right: 15px;
+}
+
+/* ================MENU MEDIA ADAPTATION================ */
+
+@media (max-width: 992px) {
+    .authorization {
+        
+        &__basket {
+            display: none;
+        }
+        
+        &__register {
+            display: none;
+        }
+        
+        &__sp {
+            display: none;
+        }
+        
+        &__login {
+            display: none;
+        }
+        
+        &__mob_basket {
+            display: block;
+        } 
+    }
+    
+    .navbar {
+        flex-wrap: nowrap;
+    }
+    
+    .navbar__button_tog {
+        display: block;
     }
 }
