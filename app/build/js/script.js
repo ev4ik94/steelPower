@@ -20,20 +20,6 @@ $(document).ready(() => {
     prevArrow: '<button class="banner__item_left slick-controls position-absolute"><img src="./img/slick-left.svg" alt=""></button>',
     nextArrow: '<button class="banner__item_right slick-controls position-absolute"><img src="./img/slick-right.svg" alt=""></button>'
   });
-  /* ---------LIDER SLICK-------------- */
-
-  $('#lider-slick').slick({
-    infinite: false,
-    autoPlay: false,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    prevArrow: '<button class="lider__left lider__btn_sl position-absolute"><img src="./img/slick-left.svg" alt=""></button>',
-    nextArrow: '<button class="lider__right lider__btn_sl position-absolute"><img src="./img/slick-right.svg" alt=""></button>',
-    responsive: [{
-      breakpoint: 992,
-      settings: "unslick"
-    }]
-  });
   $('#categories-home').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -56,9 +42,20 @@ $(document).ready(() => {
   /*-------Window Resize Function---------*/
 
   function windowResize() {
-    $('#categories-home').slick('reinit'); // if(windowWidth<=992){
-    //     $('#lider-slick').slick('unslick');
-    // }
+    $('#categories-home').slick('reinit');
+
+    if (window.innerWidth >= 992) {
+      $('#lider-slick').not('.slick-initialized').slick({
+        infinite: false,
+        autoPlay: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: '<button class="lider__left lider__btn_sl position-absolute"><img src="./img/slick-left.svg" alt=""></button>',
+        nextArrow: '<button class="lider__right lider__btn_sl position-absolute"><img src="./img/slick-right.svg" alt=""></button>'
+      });
+    } else {
+      $('#lider-slick').slick('unslick');
+    }
   }
 
   $(window).on('resize', windowResize);
