@@ -135,3 +135,22 @@
         }
     }
 }
+
+
+
+/*--------Media Screen---------------*/
+@media screen and (max-width: 992px){
+    .banner{
+
+        &__block{
+            margin-right: 0;
+            &_img{
+                height: 300px!important;
+            }
+
+            &_right{
+                right: 10px;
+            }
+        }
+    }
+}

@@ -1,4 +1,7 @@
 
+/*-------- Variables Constant---------*/
+const windowWidth = window.innerWidth;
+
 $(document).ready(()=>{
     /*--------Slick Banner Home page-------*/
     $('#banner-home').slick({
@@ -56,10 +59,20 @@ $(document).ready(()=>{
             }
         ]
     });
-    
-    const windowWidth = 992;
-    if(windowWidth<=992){
-        
+
+
+
+    /*-------Window Resize Function---------*/
+    function windowResize(){
+        $('#categories-home').slick('reinit');
+        // if(windowWidth<=992){
+        //     $('#lider-slick').slick('unslick');
+        // }
     }
+
+    $(window).on('resize', windowResize)
+    windowResize()
+
+
 })
 

@@ -10,8 +10,6 @@
         line-height: 18px;
         font-weight: 400;
         color: $white;
-        max-width: 310px;
-        width: 100%;
         margin-bottom: 0;
     }
 
@@ -48,6 +46,17 @@
             font-weight: 700;
             color: $white;
             text-decoration: none;
+        }
+    }
+}
+
+
+/*-------------Media Queries------------*/
+@media screen and (max-width: 992px){
+    .footer {
+
+        &__block {
+            flex-direction: column-reverse;
         }
     }
 }

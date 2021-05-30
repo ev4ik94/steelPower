@@ -28,7 +28,6 @@ header {
 }
 
 .authorization {
-    display: flex;
 
     &__info {
         display: flex;
@@ -161,12 +160,28 @@ header {
             display: block;
         } 
     }
-    
-    .navbar {
-        flex-wrap: nowrap;
+
+    .header__link {
+        padding-left: 0!important;
     }
     
+
     .navbar__button_tog {
         display: block;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .header__logo {
+        width: 200px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 340px) {
+    .header__logo {
+        width: 180px;
     }
 }
