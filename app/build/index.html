@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <title>Steelpower</title>
+</head>
+
+<body>
+    <!----------------------NAVBAR START--------------------->
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-light navbar-expand-lg">
+
+                <div class="container-fluid ps-0">
+
+                    <button class="navbar__button_tog" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="header__logo" href="#">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <div class="authorization d-lg-none d-flex">
+                        <div class="authorization__info">
+                            <div class="authorization__login_img">
+                                <img src="./img/user.svg" alt="" class="align-text-bottom">
+                            </div>
+                            <div class="authorization__login">
+                                <button>Войти</button>
+                            </div>
+                            <span class="authorization__sp">/</span>
+                            <div class="authorization__register">
+                                <button>Зарегистрироваться</button>
+                            </div>
+                        </div>
+                        <button class="authorization__basket">
+                            <div class="authorization__basket_img">
+                                <img src="./img/basket.svg" alt="">
+                            </div>
+                            <p class="authorization__basket_text">Коризна</p>
+                        </button>
+
+                        <button class="authorization__mob_basket position-relative">
+                            <div class="authorization__mob_img">
+                                <img src="./img/basket.svg" alt="">
+                            </div>
+                            <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse pt-lg-0 pt-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="header__link" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header__link" href="#">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header__link" href="#">SP-TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header__link" href="#">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="authorization d-lg-flex d-none">
+                        <div class="authorization__info">
+                            <div class="authorization__login_img">
+                                <img src="./img/user.svg" alt="" class="align-text-bottom">
+                            </div>
+                            <div class="authorization__login">
+                                <button>Войти</button>
+                            </div>
+                            <span class="authorization__sp">/</span>
+                            <div class="authorization__register">
+                                <button>Зарегистрироваться</button>
+                            </div>
+                        </div>
+                        <button class="authorization__basket">
+                            <div class="authorization__basket_img">
+                                <img src="./img/basket.svg" alt="">
+                            </div>
+                            <p class="authorization__basket_text">Коризна</p>
+                        </button>
+
+                        <button class="authorization__mob_basket position-relative">
+                            <div class="authorization__mob_img">
+                                <img src="./img/basket.svg" alt="">
+                            </div>
+                            <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
+                        </button>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!----------------------NAVBAR END--------------------->
+    
+    <!----------------------MAIN START--------------------->
+    <main>
+        <div class="container-fluid">
+            <!----------------------HOME BANNER START--------------------->
+            <section class="banner d-flex flex-wrap justify-content-between">
+                <div class="col-lg-9 col-12 mb-lg-0 mb-5">
+                    <div class="banner__block position-relative" id="banner-home">
+                        <div class="banner__block_img">
+                            <img src="./img/banner.png" alt="">
+                        </div>
+                        <div class="banner__block_img">
+                            <img src="./img/banner.png" alt="">
+                        </div>
+                        <div class="banner__block_img">
+                            <img src="./img/banner.png" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="banner__product col-lg-3 col-12" id="product-slick">
+                    <div>
+                        <div class="banner__item d-flex position-relative">
+                            <div class="banner__item_img">
+                                <img src="./img/Product of the day.png" alt="">
+                            </div>
+                            <p class="banner__item_text">Товар дня</p>
+                            <span
+                                class="banner__item_sp d-flex align-items-center justify-content-center position-absolute">-15%</span>
+                        </div>
+                        <div class="banner__info">
+                            <h3 class="banner__info_title">FOR MASS GAINER</h3>
+                            <p class="banner__info_weight">1500 г.</p>
+                            <div class="banner__info_end d-flex justify-content-between">
+                                <span class="banner__info_price d-flex align-items-center">990 руб.</span>
+                                <button class="banner__info_btn">
+                                    <img src="./img/basketPlus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="banner__item d-flex position-relative">
+                            <div class="banner__item_img">
+                                <img src="./img/Product of the day.png" alt="">
+                            </div>
+                            <p class="banner__item_text">Товар дня</p>
+                            <span
+                                class="banner__item_sp d-flex align-items-center justify-content-center position-absolute">-15%</span>
+                        </div>
+                        <div class="banner__info">
+                            <h3 class="banner__info_title">FOR MASS GAINER</h3>
+                            <p class="banner__info_weight">1500 г.</p>
+                            <div class="banner__info_end d-flex justify-content-between">
+                                <span class="banner__info_price d-flex align-items-center">990 руб.</span>
+                                <button class="banner__info_btn">
+                                    <img src="./img/basketPlus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="banner__item d-flex position-relative">
+                            <div class="banner__item_img">
+                                <img src="./img/Product of the day.png" alt="">
+                            </div>
+                            <p class="banner__item_text">Товар дня</p>
+                            <span
+                                class="banner__item_sp d-flex align-items-center justify-content-center position-absolute">-15%</span>
+                        </div>
+                        <div class="banner__info">
+                            <h3 class="banner__info_title">FOR MASS GAINER</h3>
+                            <p class="banner__info_weight">1500 г.</p>
+                            <div class="banner__info_end d-flex justify-content-between">
+                                <span class="banner__info_price d-flex align-items-center">990 руб.</span>
+                                <button class="banner__info_btn">
+                                    <img src="./img/basketPlus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!----------------------HOME BANNER END--------------------->
+
+            <!----------------------CATEGORIES START--------------------->
+
+            <section class="category d-lg-flex d-block flex-lg-wrap  justify-content-start" id="categories-home">
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-column justify-content-center">
+                                <span class="category__span">Скидка</span>
+                                <p class="category__sale">-10%</p>
+                            </div>
+                            <div class="category__img"><img src="./img/gainer.png" alt=""></div>
+                        </div>
+                        <p class="category__text">Гейнеры</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
+                                alt=""></div>
+                        <p class="category__text">Протеины</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
+                                alt=""></div>
+                        <p class="category__text">Аминокислоты</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
+                                alt=""></div>
+                        <p class="category__text">Коллагены и хондропротекторы</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/noise.png" alt=""></div>
+                        <p class="category__text">Энергетики</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
+                                alt=""></div>
+                        <p class="category__text">Изотоники</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
+                                alt=""></div>
+                        <p class="category__text">Жиросжигатели</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/omega-3.png" alt=""></div>
+                        <p class="category__text">Полиненасыщенные жирные кислоты</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/sneki.png" alt=""></div>
+                        <p class="category__text">Протеиновые снэки</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/syrup.png" alt=""></div>
+                        <p class="category__text">Напитки и сиропы</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/shake.png" alt=""></div>
+                        <p class="category__text">Аксессуары и шейкеры</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                        <div class="category__img d-flex justify-content-end"><img src="./img/vitamins.png" alt="">
+                        </div>
+                        <p class="category__text">Витамины</p>
+                    </a>
+                </div>
+            </section>
+            <!----------------------CATEGORIES END--------------------->
+        </div>
+        <!----------------------LIDER-BLOCK START--------------------->
+        <section class="lider container-fluid">
+            <h3 class="lider__title d-inline-block">Лидеры продаж</h3>
+            <div class="position-relative">
+                <div class="lider__block d-lg-block d-flex flex-wrap" id="lider-slick">
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img position-relative">
+                            <div class="position-absolute not_available d-flex justify-content-center align-items-center">
+                                <p>Нет в наличии</p>
+                            </div>
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img ">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img position-relative">
+                            <div class="position-absolute not_available d-flex justify-content-center align-items-center">
+                                <p>Нет в наличии</p>
+                            </div>
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img ">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lider__info col-lg-12 col-6">
+                        <div class="lider__img">
+                            <img src="./img/collagen-lider.png" alt="">
+                        </div>
+                        <div class="lider__item">
+                            <h3 class="lider__item_title">FOR MASS GAINER</h3>
+                            <p class="lider__item_weight">1500 г.</p>
+                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
+                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
+                                <button class="lider__item_btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!----------------------OUR ADVANTAGES START--------------------->
+        <section class="advantage container-fluid">
+            <h3 class="advantage__title d-inline-block">Наши преимущества</h3>
+            <div class="d-flex justify-content-between flex-lg-nowrap flex-wrap">
+                <div class="advantage__block d-flex align-items-center col-lg-4 col-12 px-3 mb-lg-0 mb-3">
+                    <div class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
+                        <div class="advantage__img"><img src="./img/delivery.svg" alt=""></div>
+                    </div>
+                    <div class="advantage__block_desc col-lg-8 col-md-8 col-6">
+                        <p class="advantage__text">Удобная<br> доставка</p>
+                    </div>
+                </div>
+                <div class="advantage__block d-flex align-items-center col-lg-4 col-12 px-3 mb-lg-0 mb-3">
+                    <div class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
+                        <div class="advantage__img"><img src="./img/best-price.svg" alt=""></div>
+                    </div>
+                    <div class="advantage__block_desc col-lg-8 col-md-8 col-6">
+                        <p class="advantage__text">Лучшая<br> цена</p>
+                    </div>
+                </div>
+                <div class="advantage__block d-flex align-items-center col-lg-4 col-12 px-3 mb-lg-0 mb-3">
+                    <div class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
+                        <div class="advantage__img"><img src="./img/bonus-program.svg" alt=""></div>
+                    </div>
+                    <div class="advantage__block_desc col-lg-8 col-md-8 col-6">
+                        <p class="advantage__text">Бонусная<br> программа</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------OUR ADVANTAGES END--------------------->
+    </main>
+    <!----------------------MAIN END--------------------->
+    
+    <!----------------------FOOTER START--------------------->
+    <footer class="footer">
+        <div class="footer__block container-fluid d-flex justify-content-between align-items-center  flex-wrap">
+            <p class="footer__text text-lg-left text-center mb-0">Производитель: ООО "Стил Пауэр Нутришн"<br> г.Пермь, ул.Героев Хасана, 105, корп. 17/3</p>
+            <div class="footer__info d-flex flex-lg-row flex-column mb-lg-0 mb-3">
+                <div class="footer__social d-flex align-items-center justify-content-center mb-3">
+                    <a href="#"><img src="./img/social-vk.svg" alt=""></a>
+                    <a href="#"><img src="./img/social-inst.svg" alt=""></a>
+                </div>
+                <div class="footer__link d-flex flex-column">
+                    <a href="tel:89258388885" class="text-lg-left text-center">8-925-83-888-85</a>
+                    <a href="mailto:sales@steelmuscles.ru" class="text-lg-left text-center">sales@steelmuscles.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------FOOTER END--------------------->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

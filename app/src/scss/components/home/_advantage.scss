@@ -1,0 +1,121 @@
+.advantage {
+    margin-bottom: 100px;
+    &__title {
+        line-height: 28px;
+        font-weight: 700;
+        color: $black;
+        padding: 10px 20px;
+        background: $main;
+        margin-bottom: 30px;
+    }
+
+    &__block {
+        width: 100%;
+        &_img {
+            width: 140px;
+            height: 140px;
+            padding: 20px;
+            background: $grey;
+            border-radius: 50%;
+        }
+
+        &_desc {
+            background: $main;
+            margin-left: 20px;
+        }
+    }
+
+    &__img {
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 0;
+        padding: 5px 0 5px 15px;
+    }
+}
+
+
+
+/*----------Media queries-------------*/
+@media screen and (max-width: 1380px){
+    .advantage {
+
+
+        &__block {
+
+            &_img {
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+
+
+    }
+}
+
+
+@media screen and (max-width: 1315px){
+    .advantage {
+
+
+        &__block {
+
+            &_img {
+                width: 80px;
+                height: 80px;
+            }
+
+
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+
+    }
+}
+
+
+
+@media screen and (max-width: 992px){
+    .advantage {
+
+        &__block {
+
+            &_img {
+                width: 120px;
+                height: 120px;
+                margin-right: 20px;
+            }
+
+        }
+
+        &__text{
+            font-size: 20px;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 380px){
+    .advantage {
+
+        &__text{
+            font-size: 18px;
+        }
+
+    }
+}
