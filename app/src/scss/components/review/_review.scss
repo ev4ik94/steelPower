@@ -1,0 +1,104 @@
+.review {   
+    &__rating {
+        &_block {
+            & p {
+                font-size: 36px;
+                line-height: 36px;
+                font-weight: 700;
+                color: $black;
+                margin-right: 15px;
+            }
+
+            & span {
+                font-size: 36px;
+                line-height: 43px;
+                font-weight: 400;
+                color: $black;
+                font-style: italic;
+            }
+        }
+    }
+    
+    &__info {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $black-grey;
+        padding-top: 60px;
+    }
+    
+    &__star {
+
+        & p {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            color: $black;
+
+            & span {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $black;
+                font-style: italic;
+            }
+        }
+    }
+
+    &__form {
+
+        & button {
+            background: $main;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            line-height: 18px;
+            color: $black;
+            padding: 13px 50px;
+        }
+    }
+    
+    &__block {
+        margin-bottom: 100px;
+    }
+    
+    &__name {
+
+        & p {
+            font-size: 18px !important;
+            line-height: 18px !important;
+            font-weight: 700 !important;
+            color: $black !important;
+            margin-bottom: 20px !important;
+        }
+    }
+
+    &__box {
+
+        & span {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 400;
+            color: $black-grey;
+            margin-right: 15px;
+        }
+    }
+
+    &__desc {
+
+        & p {
+            font-size: 18px;
+            line-height: 21px;
+            color: $black-grey;
+            font-weight: 400;
+            margin-bottom: 7px;
+            font-style: italic;
+        }
+
+        & span {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 400;
+            font-style: italic;
+            color: $black;
+        }
+    }
+}

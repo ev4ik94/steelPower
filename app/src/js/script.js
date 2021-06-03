@@ -74,8 +74,16 @@ $(document).ready(()=>{
 
     $(window).on('resize', windowResize)
     windowResize()
-
-
+    
+    /* -----------------PRODUCT PAGE ITEM SLICK----------------- */
+    $('#item-slick').slick({
+        infinite: true,
+        autoPlay: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<button class="position-absolute product-left-btn" ><img src="./img/slick-left.svg" alt=""></button>',
+        nextArrow: '<button class="position-absolute product-right-btn" ><img src="./img/slick-right.svg" alt=""></button>'
+    })
 })
 
 
