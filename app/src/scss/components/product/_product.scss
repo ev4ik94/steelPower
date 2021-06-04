@@ -23,6 +23,42 @@
     }
 }
 
+.dropdown {
+
+    & button {
+        width: 100%;
+        border: 1px solid $white-grey;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background: $white;
+        color: $black;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        padding: 15px 12px;
+
+        &:hover {
+            background: transparent;
+            color: $black;
+            border: 1px solid $white-grey;
+        }
+
+        &:active {
+            background: transparent;
+            color: $black;
+            border-color: transparent;
+            box-shadow: transparent;
+        }
+
+        &:focus {
+            background: transparent;
+            color: $black;
+        }
+    }
+}
+
+
+
 .product {
     &__block {
         padding-top: 30px;
@@ -293,5 +329,13 @@
         border: none;
         background: $main;
         border-radius: 5px;
+    }
+}
+
+/* ============АДАПТАЦИЯ (PRODUCT)============ */
+
+@media (max-width: 992px) {
+    .search-product {
+        display: none !important;
     }
 }
