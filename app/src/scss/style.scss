@@ -9,20 +9,25 @@
 @import "./components/main-components/footer";
 @import "components/product/product";
 @import "./components/review/review";
+@import "./components/athlete-card/athlete-card.scss";
+@import "./components/catalog/catalog.scss";
 
 
-*, *::after, *::before {
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'HelveticaNeueCyr', 'sans-serif'!important;
+body {
+  font-family: 'HelveticaNeueCyr', 'sans-serif' !important;
 }
 
 
-button{
+button {
   cursor: pointer;
   outline: none;
 }
@@ -39,6 +44,7 @@ h1 {
   margin-right: auto;
   margin-left: auto;
 }
+
 /*=============FONTS=================*/
 
 @font-face {
@@ -78,8 +84,8 @@ h1 {
 
 /*------Media Queries--------*/
 
-@media screen and (max-width: 992px){
-  .container-fluid{
+@media screen and (max-width: 992px) {
+  .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
   }

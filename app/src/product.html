@@ -19,9 +19,7 @@
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-light navbar-expand-lg">
-
                 <div class="container-fluid ps-0">
-
                     <button class="navbar__button_tog" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -30,34 +28,6 @@
                     <a class="header__logo" href="#">
                         <img src="./img/logo.svg" alt="">
                     </a>
-                    <div class="authorization d-lg-none d-flex">
-                        <div class="authorization__info">
-                            <div class="authorization__login_img">
-                                <img src="./img/user.svg" alt="" class="align-text-bottom">
-                            </div>
-                            <div class="authorization__login">
-                                <button>Войти</button>
-                            </div>
-                            <span class="authorization__sp">/</span>
-                            <div class="authorization__register">
-                                <button>Зарегистрироваться</button>
-                            </div>
-                        </div>
-                        <button class="authorization__basket">
-                            <div class="authorization__basket_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <p class="authorization__basket_text">Коризна</p>
-                        </button>
-
-                        <button class="authorization__mob_basket position-relative">
-                            <div class="authorization__mob_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <span
-                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
-                        </button>
-                    </div>
                     <div class="collapse navbar-collapse pt-lg-0 pt-3" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -74,6 +44,9 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- Не авторизованный пользователь -->
+
+<!-- 
                     <div class="authorization d-lg-flex d-none">
                         <div class="authorization__info">
                             <div class="authorization__login_img">
@@ -101,9 +74,27 @@
                             <span
                                 class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
                         </button>
+                    </div> -->
+
+
+                    <!-- Авторизованный пользователь -->
+
+                    <div class="authorized-user d-flex">
+                        <button class="authorized-user__button">
+                            <img src="./img/user.svg" alt="">
+                        </button>
+                        <button class="authorized-user__info d-flex justify-content-between align-items-center">
+                            <div class="position-relative d-flex">
+                                <div>
+                                    <img src="./img/basket.svg" alt="">
+                                </div>
+                                <span
+                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>
+                            </div>
+                            <p>Коризна</p>
+                        </button>
                     </div>
                 </div>
-
             </nav>
         </div>
     </header>
@@ -115,7 +106,7 @@
             </button>
             <input type="text" placeholder="Поиск по товарам">
         </div>
-        <section class="product"> 
+        <section class="product">
             <div class="product__top">
                 <p class="product__link"><a href="#">Каталог /</a><a href="#"> Гейнеры / </a>Formass Gainer 1500</p>
                 <p class="product__name">Formass Gainer, 1500 г.</p>
@@ -182,7 +173,7 @@
                                 <div><img src="./img/barberry.png" alt=""></div>
                                 <div><img src="./img/blueberry.png" alt=""></div>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="product__desc">
@@ -200,46 +191,51 @@
                             какао порошок (шоколадные вкусы), ксантановая камедь (стабилизатор), ароматизаторы
                             натуральные и идентичные натуральным, лимонная кислота (регулятор кислотности, вкус:
                             клубника со сливками), соль поваренная, сукралоза (подсластитель).</p>
-                        <div class="d-flex flex-wrap justify-content-between">
-                            <div class="product__desc_block">
-                                <p class="product__desc_info">Пищевая ценность на порцию 75г.</p>
-                                <div><span>Калории</span><span>285,8 ккал</span></div>
-                                <div><span>Белки</span><span>15 г</span></div>
-                                <div><span>Углеводы</span><span>54 г</span></div>
-                                <div><span>Жиры</span><span>1 г</span></div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-lg-6">
+                                <div class="product__desc_block">
+                                    <p class="product__desc_info">Пищевая ценность на порцию 75г.</p>
+                                    <div><span>Калории</span><span>285,8 ккал</span></div>
+                                    <div><span>Белки</span><span>15 г</span></div>
+                                    <div><span>Углеводы</span><span>54 г</span></div>
+                                    <div><span>Жиры</span><span>1 г</span></div>
+                                </div>
+                                <div class="product__desc_block">
+                                    <p class="product__desc_info">Заменимые аминокислоты</p>
+                                    <div><span>Аланин</span><span>1,00 г</span></div>
+                                    <div><span>Аргинин</span><span>0,52 г</span></div>
+                                    <div><span>Аспаргин</span><span>1,95 г</span></div>
+                                    <div><span>Цистеин</span><span>0,43 г</span></div>
+                                    <div><span>Глютамин</span><span>3,42 г</span></div>
+                                    <div><span>Глицин</span><span>0,40 г</span></div>
+                                    <div><span>Гистидин</span><span>0,40 г</span></div>
+                                    <div><span>Пролин</span><span>1,23 г</span></div>
+                                    <div><span>Серин</span><span>1,03 г</span></div>
+                                    <div><span>Тирозин</span><span>0,63 г</span></div>
+                                </div>
                             </div>
-                            <div class="product__desc_block">
-                                <p class="product__desc_info">Пищевая ценность на порцию 100г.</p>
-                                <div><span>Калории</span><span>381 ккал</span></div>
-                                <div><span>Белки</span><span>20 г</span></div>
-                                <div><span>Углеводы</span><span>72 г</span></div>
-                                <div><span>Жиры</span><span>1,4 г</span></div>
-                            </div>
-                            <div class="product__desc_block">
-                                <p class="product__desc_info">Заменимые аминокислоты</p>
-                                <div><span>Аланин</span><span>1,00 г</span></div>
-                                <div><span>Аргинин</span><span>0,52 г</span></div>
-                                <div><span>Аспаргин</span><span>1,95 г</span></div>
-                                <div><span>Цистеин</span><span>0,43 г</span></div>
-                                <div><span>Глютамин</span><span>3,42 г</span></div>
-                                <div><span>Глицин</span><span>0,40 г</span></div>
-                                <div><span>Гистидин</span><span>0,40 г</span></div>
-                                <div><span>Пролин</span><span>1,23 г</span></div>
-                                <div><span>Серин</span><span>1,03 г</span></div>
-                                <div><span>Тирозин</span><span>0,63 г</span></div>
-                            </div>
-                            <div class="product__desc_block">
-                                <p class="product__desc_info">Незаменимые аминокислоты на 100г.</p>
-                                <div><span>Изолейцин</span><span>1,20 г</span></div>
-                                <div><span>Лейцин</span><span>2,00 г</span></div>
-                                <div><span>Лизин</span><span>1,80 г</span></div>
-                                <div><span>Метионин</span><span>0,48 г</span></div>
-                                <div><span>Фенилаланин</span><span>0,65 г</span></div>
-                                <div><span>Треонин</span><span>1,35 г</span></div>
-                                <div><span>Триптофан</span><span>0,38 г</span></div>
-                                <div><span>Валин</span><span>1,15 г</span></div>
+                            <div class="col-lg-6">
+                                <div class="product__desc_block">
+                                    <p class="product__desc_info">Пищевая ценность на порцию 100г.</p>
+                                    <div><span>Калории</span><span>381 ккал</span></div>
+                                    <div><span>Белки</span><span>20 г</span></div>
+                                    <div><span>Углеводы</span><span>72 г</span></div>
+                                    <div><span>Жиры</span><span>1,4 г</span></div>
+                                </div>
+                                <div class="product__desc_block">
+                                    <p class="product__desc_info">Незаменимые аминокислоты на 100г.</p>
+                                    <div><span>Изолейцин</span><span>1,20 г</span></div>
+                                    <div><span>Лейцин</span><span>2,00 г</span></div>
+                                    <div><span>Лизин</span><span>1,80 г</span></div>
+                                    <div><span>Метионин</span><span>0,48 г</span></div>
+                                    <div><span>Фенилаланин</span><span>0,65 г</span></div>
+                                    <div><span>Треонин</span><span>1,35 г</span></div>
+                                    <div><span>Триптофан</span><span>0,38 г</span></div>
+                                    <div><span>Валин</span><span>1,15 г</span></div>
+                                </div>
                             </div>
                         </div>
+
                         <h5>Рекомендации по применению</h5>
                         <p>Смешайте в шейкере 75 грамм (1,5 мерных ложки) продукта с 300-400мл воды или молока.
                             Рекомендовано принимать 2-3 коктейля в день: первый утром, следующие между основными
@@ -252,8 +248,10 @@
                             <span>-50%</span>
                         </div>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-expanded="false">Молочное печенье</button>
+                            <button
+                                class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                aria-expanded="false">Молочное печенье</button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -678,7 +676,7 @@
                     <a href="#"><img src="./img/social-inst.svg" alt=""></a>
                 </div>
                 <div class="footer__link d-flex flex-column">
-                    <a href="tel:89258388885" class="text-lg-left text-center">8-925-83-888-85</a>
+                    <a href="tel:89258388885" class="text-lg-left text-center mb-2">8-925-83-888-85</a>
                     <a href="mailto:sales@steelmuscles.ru" class="text-lg-left text-center">sales@steelmuscles.ru</a>
                 </div>
             </div>

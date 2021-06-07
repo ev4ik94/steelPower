@@ -1,0 +1,18 @@
+.product {
+    &__date {
+        padding: 12px;
+        border: 1px solid;
+        border-color: #D0D0D0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background: #fff;
+        width: 100%;
+        margin: 10px 0 20px 0;
+        
+        & input {
+            border: none;
+            background: transparent;
+            width: 100%;
+        }
+    }
+}

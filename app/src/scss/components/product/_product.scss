@@ -149,6 +149,7 @@
     &__main_img {
         max-width: 581px;
         width: 100%;
+        margin-bottom: 10px;
 
         img {
             width: 100%;
@@ -160,6 +161,7 @@
     &__image {
 
         & button {
+            z-index: 3;
             border: none;
             background: transparent;
             top: 50%;
@@ -205,6 +207,7 @@
             margin-bottom: 15px;
         }
     }
+    
 
 
     &__desc_info {
@@ -217,8 +220,7 @@
     }
 
     &__desc_block {
-        max-width: 265px;
-        width: 100%;
+        padding: 0 10px 0 10px;
         margin-bottom: 15px;
 
         & div {
@@ -313,7 +315,6 @@
             margin-bottom: 0;
             font-size: 14px;
             line-height: 17px;
-            font-style: italic;
             color: $black;
             font-weight: 400;
         }

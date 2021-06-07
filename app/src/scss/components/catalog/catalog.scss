@@ -1,0 +1,156 @@
+.catalog {
+    
+    &__block {
+        padding: 0 10px 0 10px;
+        margin-bottom: 20px;
+    }
+    
+    & h5 {
+        font-weight: 700;
+        color: #343434;
+        padding: 10px 20px;
+        background: #FFF500;
+        margin-bottom: 20px;
+    }
+    
+    
+    &__img {
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        & span {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #343434;
+            width: 85px;
+            height: 85px;
+            background: #FFF500;
+            border-radius: 50%;
+            right: 30px;
+        }
+    }
+
+    &__desc {
+        padding: 20px;
+
+        &_name {
+
+            & p {
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 700;
+                color: #343434;
+                margin-bottom: 15px;
+            }
+
+            & span {
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 400;
+                color: #343434;
+            }
+        }
+
+        &_review {
+            margin-bottom: 15px;
+
+            & div {
+                margin-right: 5px;
+
+                & svg {
+                    fill: #FFF500;
+                    vertical-align: baseline;
+                }
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 120%;
+                font-weight: 400;
+                color: #343434;
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+
+            & button {
+                border: none;
+                background: transparent;
+
+            }
+        }
+
+        &_sale {
+            font-size: 18px;
+            line-height: 18px;
+            text-decoration-line: line-through;
+            color: #B0B0B0;
+        }
+
+        &_price {
+
+            & p {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 700;
+                color: #343434;
+                margin-bottom: 0;
+            }
+
+            & button {
+                background: #FFF500;
+                border-radius: 5px;
+                border: none;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 700;
+                color: #343434;
+                padding: 13px 26px;
+            }
+        }
+    }
+    
+}
+
+
+
+/* -----------------MEDIA CATALOG---------------------- */
+
+@media (max-width: 768px) {
+    .catalog {
+        
+        margin-top: 20px;
+        
+        &__img {
+            justify-content: center !important;
+            
+            & span {
+                right: 27% !important ;
+            }
+        }
+        
+        &__block {
+            border-bottom: 1px solid #343434;
+            
+            &:last-child {
+                border-bottom: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 366px) {
+    .catalog {
+        
+        &__img {
+            
+            & span {
+                right: 5% !important;
+            }
+        }
+    }
+}
