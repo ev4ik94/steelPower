@@ -39,35 +39,66 @@ $(document).ready(() => {
       }
     }]
   });
-  /*-------Window Resize Function---------*/
-
-  function windowResize() {
-    $('#categories-home').slick('reinit');
-
-    if (window.innerWidth >= 992) {
-      $('#lider-slick').not('.slick-initialized').slick({
-        infinite: false,
-        autoPlay: false,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        prevArrow: '<button class="lider__left lider__btn_sl position-absolute"><img src="./img/slick-left.svg" alt=""></button>',
-        nextArrow: '<button class="lider__right lider__btn_sl position-absolute"><img src="./img/slick-right.svg" alt=""></button>'
-      });
-    } else {
-      $('#lider-slick').slick('unslick');
-    }
-  }
-
-  $(window).on('resize', windowResize);
-  windowResize();
   /* -----------------PRODUCT PAGE ITEM SLICK----------------- */
 
   $('#item-slick').slick({
-    infinite: true,
+    infinite: false,
     autoPlay: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<button class="position-absolute product-left-btn" ><img src="./img/slick-left.svg" alt=""></button>',
-    nextArrow: '<button class="position-absolute product-right-btn" ><img src="./img/slick-right.svg" alt=""></button>'
+    nextArrow: '<button class="position-absolute product-right-btn" ><img src="./img/slick-right.svg" alt=""></button>',
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+      }
+    }]
   });
+  /*------ Lider Block Page Product---------*/
+
+  $('#lider-slick-2').slick({
+    infinite: false,
+    autoPlay: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    prevArrow: '<button class="lider__left lider__btn_sl position-absolute"><img src="./img/slick-left.svg" alt=""></button>',
+    nextArrow: '<button class="lider__right lider__btn_sl position-absolute"><img src="./img/slick-right.svg" alt=""></button>',
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }]
+  });
+  /*--------Add Delete Items Cart -------*/
+
+  function addDeleteItems(event, elemVal) {
+    let value = Number(elemVal.innerText);
+  }
 });
+/*-------Window Resize Function---------*/
+
+function windowResize() {
+  $('#categories-home').slick('reinit');
+
+  if (window.innerWidth >= 992) {
+    $('#lider-slick').not('.slick-initialized').slick({
+      infinite: false,
+      autoPlay: false,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      prevArrow: '<button class="lider__left lider__btn_sl position-absolute"><img src="./img/slick-left.svg" alt=""></button>',
+      nextArrow: '<button class="lider__right lider__btn_sl position-absolute"><img src="./img/slick-right.svg" alt=""></button>'
+    });
+  } else {
+    $('#lider-slick').slick('unslick');
+  }
+}
+
+$(window).on('resize', windowResize);
+windowResize();
