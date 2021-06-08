@@ -116,7 +116,10 @@ header {
 
     &__mob_text {
         font-size: 8px;
+<<<<<<< HEAD
         padding: 3px;
+=======
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
         line-height: 8px;
         font-weight: 700;
         color: $black;
@@ -136,6 +139,7 @@ header {
     margin-right: 15px;
 }
 
+<<<<<<< HEAD
 
 /* АВТОРИЗОВАННЫЙ ПОЛЬЗОВАТЕЛЬ */
 
@@ -195,10 +199,18 @@ header {
 @media (max-width: 1325px) {
     .authorization {
 
+=======
+/* ================MENU MEDIA ADAPTATION================ */
+
+@media (max-width: 1325px){
+    .authorization {
+        
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
         &__basket {
             padding: 7px 15px;
         }
     }
+<<<<<<< HEAD
 
     .header__link {
         padding-right: 0 !important;
@@ -208,11 +220,23 @@ header {
         width: 225px;
     }
 
+=======
+    
+    .header__link {
+        padding-right: 0 !important;
+    }
+    
+    .header__logo {
+        width: 225px;
+    }
+    
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
     .navbar-nav {
         margin-right: 0 !important;
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 1200px) {
     .authorization {
 
@@ -224,10 +248,23 @@ header {
 
         &__info {
             & button {
+=======
+@media (max-width: 1200px){
+    .authorization {
+        
+        &__basket {
+            &_text{
+                font-size: 14px;
+            }
+        }
+        &__info{
+            & button{
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
                 font-size: 14px;
             }
         }
     }
+<<<<<<< HEAD
 
     .header__link {
         font-size: 14px;
@@ -237,10 +274,22 @@ header {
         width: 150px;
     }
 
+=======
+    
+    .header__link {
+        font-size: 14px;
+    }
+    
+    .header__logo {
+        width: 150px;
+    }
+    
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
 }
 
 @media (max-width: 992px) {
     .authorization {
+<<<<<<< HEAD
 
         &__basket {
             display: none !important;
@@ -261,10 +310,33 @@ header {
         &__mob_basket {
             display: block;
         }
+=======
+        
+        &__basket {
+            display: none;
+        }
+        
+        &__register {
+            display: none;
+        }
+        
+        &__sp {
+            display: none;
+        }
+        
+        &__login {
+            display: none;
+        }
+        
+        &__mob_basket {
+            display: block;
+        } 
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
     }
 
     .header__link {
         font-size: 16px;
+<<<<<<< HEAD
         padding-left: 0 !important;
     }
 
@@ -273,10 +345,21 @@ header {
         width: 225px;
     }
 
+=======
+        padding-left: 0!important;
+    }
+    
+    
+    .header__logo {
+        width: 225px;
+    }
+    
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
 
     .navbar__button_tog {
         display: block;
     }
+<<<<<<< HEAD
     
     .authorized-user {
         align-items: center !important;
@@ -318,12 +401,15 @@ header {
     }
     
     
+=======
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
 }
 
 
 
 @media (max-width: 400px) {
     .header__logo {
+<<<<<<< HEAD
         width: 180px;
         padding-right: 30px;
     }
@@ -340,3 +426,15 @@ header {
 
 }
 
+=======
+        width: 200px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 340px) {
+    .header__logo {
+        width: 180px;
+    }
+}
+>>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65

@@ -48,6 +48,7 @@ $(document).ready(()=>{
 
     });
 
+
     /* -----------------PRODUCT PAGE ITEM SLICK----------------- */
     $('#item-slick').slick({
         infinite: false,
@@ -92,8 +93,6 @@ $(document).ready(()=>{
 
 
 
-
-
     /*-------Window Resize Function---------*/
 
     function windowResize(){
@@ -118,7 +117,7 @@ $(document).ready(()=>{
 
     $(window).on('resize', windowResize)
     windowResize()
-    
+
 
 
 
