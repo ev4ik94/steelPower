@@ -89,10 +89,6 @@ $(document).ready(()=>{
     })
 
 
-})
-
-
-
     /*-------Window Resize Function---------*/
 
     function windowResize(){
@@ -117,6 +113,13 @@ $(document).ready(()=>{
 
     $(window).on('resize', windowResize)
     windowResize()
+
+
+})
+
+
+
+
 
 
 

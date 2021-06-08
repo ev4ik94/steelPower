@@ -68,13 +68,12 @@
             background: $main;
             border: none;
             border-radius: 5px;
-<<<<<<< HEAD
+
             &.disable{
                 background-color: #343434!important;
                 color:#fff!important;
             }
-=======
->>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
+
         }
     }
     
@@ -157,13 +156,12 @@
 
 @media screen and (max-width: 600px){
     .lider{
-<<<<<<< HEAD
+
         &__btn_sl{
             width: 30px;
             height: 30px;
         }
-=======
->>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
+
         &__item {
 
             &_title, &_price {
@@ -186,25 +184,20 @@
 
 @media screen and (max-width: 400px){
     .lider{
-<<<<<<< HEAD
+
 
         &__title{
             font-size: 15px;
         }
 
-=======
->>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
         &__item {
 
             &_title {
                 font-size: 12px;
             }
             &_btn{
-<<<<<<< HEAD
-                font-size: 12px;
-=======
                 font-size: 14px;
->>>>>>> 217e9e6b534e2c2b100e7ce896d3407801949c65
+
             }
         }
 
