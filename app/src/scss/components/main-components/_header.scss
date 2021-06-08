@@ -145,12 +145,16 @@ header {
         border: none;
         background: $white;
         border-radius: 50%;
-        padding: 13px 16px;
+        width: 45px;
+        padding: 10px;
+        height: 45px;
         margin-right: 20px;
 
         & img {
             width: 100%;
-            object-fit: cover;
+            height: 100%;
+            object-fit: contain;
+            vertical-align: baseline;
         }
     }
 
@@ -275,6 +279,47 @@ header {
     .navbar__button_tog {
         display: block;
     }
+    
+    .authorized-user {
+        align-items: center !important;
+    }
+    
+    .authorized-user__button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .authorized-user__info {
+        padding: 7px 12px 7px 10px;
+    }
+}
+
+@media (max-width: 523px) {
+    
+    .authorized-user {
+        align-items: center !important;
+    }
+    
+    .authorized-user__button {
+        width: 35px;
+        padding: 8px;
+        height: 35px;
+    }
+    
+    .authorized-user__info {
+        padding: 7px 12px 7px 10px;
+        width: 45px;
+    }
+    
+    .authorized-user__info span {
+        justify-content: center !important;
+    }
+    
+    .authorized-user__info p {
+        display: none !important;
+    }
+    
+    
 }
 
 
