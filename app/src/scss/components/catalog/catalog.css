@@ -1,0 +1,132 @@
+.catalog__block {
+  padding: 0 10px 0 10px;
+  margin-bottom: 20px;
+}
+
+.catalog h5 {
+  font-weight: 700;
+  color: #343434;
+  padding: 10px 20px;
+  background: #FFF500;
+  margin-bottom: 20px;
+}
+
+.catalog__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catalog__img span {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #343434;
+  width: 85px;
+  height: 85px;
+  background: #FFF500;
+  border-radius: 50%;
+  right: 30px;
+}
+
+.catalog__desc {
+  padding: 20px;
+}
+
+.catalog__desc_name p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #343434;
+  margin-bottom: 15px;
+}
+
+.catalog__desc_name span {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #343434;
+}
+
+.catalog__desc_review {
+  margin-bottom: 15px;
+}
+
+.catalog__desc_review div {
+  margin-right: 5px;
+}
+
+.catalog__desc_review div svg {
+  fill: #FFF500;
+  vertical-align: baseline;
+}
+
+.catalog__desc_review p {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #343434;
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+.catalog__desc_review button {
+  border: none;
+  background: transparent;
+}
+
+.catalog__desc_sale {
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #B0B0B0;
+}
+
+.catalog__desc_price p {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #343434;
+  margin-bottom: 0;
+}
+
+.catalog__desc_price button {
+  background: #FFF500;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #343434;
+  padding: 13px 26px;
+}
+
+/* -----------------MEDIA CATALOG---------------------- */
+@media (max-width: 768px) {
+  .catalog {
+    margin-top: 20px;
+  }
+  .catalog__img {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .catalog__img span {
+    right: 27% !important;
+  }
+  .catalog__block {
+    border-bottom: 1px solid #343434;
+  }
+  .catalog__block:last-child {
+    border-bottom: transparent;
+  }
+}
+
+@media (max-width: 366px) {
+  .catalog__img span {
+    right: 5% !important;
+  }
+}
+/*# sourceMappingURL=catalog.css.map */

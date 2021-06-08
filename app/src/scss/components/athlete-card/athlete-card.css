@@ -1,0 +1,18 @@
+.product__date {
+  padding: 12px;
+  border: 1px solid;
+  border-color: #D0D0D0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background: #fff;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+.product__date input {
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+/*# sourceMappingURL=athlete-card.css.map */

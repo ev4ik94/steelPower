@@ -150,6 +150,10 @@
 
 @media screen and (max-width: 600px){
     .lider{
+        &__btn_sl{
+            width: 30px;
+            height: 30px;
+        }
         &__item {
 
             &_title, &_price {
@@ -172,6 +176,7 @@
 
 @media screen and (max-width: 400px){
     .lider{
+
         &__item {
 
             &_title {
