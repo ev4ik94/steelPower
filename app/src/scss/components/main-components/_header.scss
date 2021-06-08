@@ -163,16 +163,15 @@ header {
 
         & span {
             font-size: 8px;
-            line-height: 8px;
-            padding: 5px;
+            padding: 2px;
             font-weight: 700;
-            color: $black;
-            width: 11px;
-            height: 11px;
-            background: $main;
+            color: #343434;
+            width: 15px;
+            height: 15px;
+            background: #FFF500;
             border-radius: 50%;
             right: -4px;
-            top: 2px;
+            top: -5px;
         }
 
         & p {
