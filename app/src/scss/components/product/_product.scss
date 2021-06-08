@@ -157,10 +157,10 @@
     }
 
     &__image {
-        height: 450px;
+       
 
         & .item-image{
-            height: 400px;
+          
             & img{
                 object-fit: contain;
             }
@@ -367,6 +367,15 @@
 
         &__top{
             border: none;
+        }
+        
+        &__image {
+            height: 450px;
+    
+            & .item-image{
+                height: 400px;
+        
+            }
         }
     }
 }
