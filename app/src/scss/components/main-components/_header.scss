@@ -116,6 +116,7 @@ header {
 
     &__mob_text {
         font-size: 8px;
+        padding: 3px;
         line-height: 8px;
         font-weight: 700;
         color: $black;
@@ -227,13 +228,18 @@ header {
 
 @media (max-width: 400px) {
     .header__logo {
-        width: 200px;
+        width: 180px;
         padding-right: 30px;
+    }
+
+    .authorization{
+        &__login_img{
+            width: 15px;
+        }
+
+        &__mob_img{
+            width: 18px;
+        }
     }
 }
 
-@media (max-width: 340px) {
-    .header__logo {
-        width: 180px;
-    }
-}
