@@ -370,3 +370,53 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .product{
+        &__name{
+            font-size: 26px;
+        }
+
+        &__reviews{
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        &__favorites_text{
+            font-size: 14px;
+        }
+
+        &__favorites_img{
+            width: 15px;
+            margin-right: 5px;
+        }
+
+        &__rating_stars>div svg{
+            width: 15px;
+            height: 15px;
+        }
+
+        &__link{
+            font-size: 14px;
+        }
+
+        &__link a{
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    .product{
+
+        &__reviews{
+            font-size: 12px;
+        }
+
+        &__favorites_text{
+            font-size: 12px;
+        }
+
+    }
+}

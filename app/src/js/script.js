@@ -87,11 +87,7 @@ $(document).ready(()=>{
         ]
     })
 
-    /*--------Add Delete Items Cart -------*/
-    function addDeleteItems(event, elemVal){
-        let value = Number(elemVal.innerText)
 
-    }
 })
 
 
