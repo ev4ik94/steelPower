@@ -115,6 +115,20 @@ $(document).ready(()=>{
     windowResize()
 
 
+    /*------------ OPEN AUTH FORMS ------------------*/
+    $('.btn-auth-forms').on('click', (e)=>{
+        const id = e.currentTarget.getAttribute('id')
+        $('.overlay-forms').addClass('active')
+        $(`div[data-id=${id}]`).removeClass('d-none')
+    })
+
+    $('.close-forms').on('click', (e)=>{
+        const id = e.currentTarget.getAttribute('id')
+        $('.overlay-forms').removeClass('active')
+        $(`.overlay-forms div[data-id]`).addClass('d-none')
+    })
+
+
 })
 
 
