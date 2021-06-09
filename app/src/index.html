@@ -24,9 +24,9 @@
 
                 <div class="container-fluid ps-0">
 
-                    <button class="navbar__button_tog" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar__button_tog d-lg-none d-block" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
 
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -62,7 +62,8 @@
                                 <img src="./img/basket.svg" alt="">
                             </div>
 
-                            <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
+                            <span
+                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
                         </button>
                     </div>
 
@@ -85,8 +86,8 @@
                     <!--                        </button>-->
                     <!--                    </div>-->
 
-                    <div class="collapse navbar-collapse pt-lg-0 pt-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse pt-lg-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-3">
                             <li class="nav-item">
                                 <a class="header__link" href="#">О нас</a>
                             </li>
@@ -128,7 +129,8 @@
                             <div class="authorization__mob_img">
                                 <img src="./img/basket.svg" alt="">
                             </div>
-                            <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
+                            <span
+                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
                         </button>
                     </div>
 
@@ -156,6 +158,81 @@
         </div>
     </header>
     <!----------------------NAVBAR END--------------------->
+
+    <!-------------Authentications Forms Start-------->
+    <div class="overlay-forms">
+        <div class="wrap-forms">
+            <!------------Form Autherization------------>
+            <div data-id="form-signup" class="d-none">
+                <form action="" class="col-lg-4 mx-auto bg-white">
+                    <div class="form__header ">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0">Регистрация</p>
+                            <button><img src="./img/close.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="form__main">
+                        <div class="form__group">
+                            <p><label for="auth-lastname">Фамилия*</label></p>
+                            <input type="text" id="auth-lastname" name="lastName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-name">Имя*</label></p>
+                            <input type="text" id="auth-name" name="firstName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-fatherName">Отчество</label></p>
+                            <input type="text" id="auth-fatherName" name="fatherName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-mail">Почта*</label></p>
+                            <input type="text" id="auth-mail" name="mail">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-password">Придумайте пароль*</label></p>
+                            <input type="text" id="auth-password" name="password">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-confirmPassword">Повторите пароль*</label></p>
+                            <input type="text" id="auth-confirmPassword" name="confirmPassword">
+                        </div>
+                        <div class="form__checkbox d-flex align-items-center">
+                            <input type="checkbox">
+                            <p class="mb-0">Принимаю соглашение на обработку <a href="">персональных данных</a></p>
+                        </div>
+                        <button type="submit ">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!------------Form Login------------>
+            <div data-id="form-signin">
+                <form action="" class="col-lg-4 mx-auto bg-white">
+                    <div class="form__header ">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0">Вход</p>
+                            <button><img src="./img/close.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="form__main">
+                        <div class="form__group">
+                            <p><label for="sigin-mail">Почта</label></p>
+                            <input type="text" id="sigin-mail" name="sigin-mail">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-lastname">Пароль</label></p>
+                            <input type="text" id="sigin-password" name="sigin-password">
+                        </div>
+                        <button type="submit ">Войти</button>
+                        <a href="" class="form__sigin d-flex justify-content-center">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-------------Authentications Forms End-------->
+
     <!----------------------MAIN START--------------------->
     <main>
         <div class="container-fluid">
@@ -338,7 +415,8 @@
                     <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img position-relative">
 
-                            <div class="position-absolute not_available d-flex justify-content-center align-items-center">
+                            <div
+                                class="position-absolute not_available d-flex justify-content-center align-items-center">
 
                                 <p>Нет в наличии</p>
                             </div>
@@ -410,7 +488,8 @@
                     <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img position-relative">
 
-                            <div class="position-absolute not_available d-flex justify-content-center align-items-center">
+                            <div
+                                class="position-absolute not_available d-flex justify-content-center align-items-center">
                                 <p>Нет в наличии</p>
                             </div>
                             <img src="./img/collagen-lider.png" alt="">
@@ -488,7 +567,8 @@
             <div class="d-flex justify-content-between flex-lg-nowrap flex-wrap">
                 <div class="advantage__block d-flex align-items-center col-lg-4 col-12 px-3 mb-lg-0 mb-3">
 
-                    <div class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
+                    <div
+                        class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
 
                         <div class="advantage__img"><img src="./img/delivery.svg" alt=""></div>
                     </div>
@@ -498,7 +578,8 @@
                 </div>
                 <div class="advantage__block d-flex align-items-center col-lg-4 col-12 px-3 mb-lg-0 mb-3">
 
-                    <div class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
+                    <div
+                        class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
 
                         <div class="advantage__img"><img src="./img/best-price.svg" alt=""></div>
                     </div>
@@ -508,7 +589,8 @@
                 </div>
                 <div class="advantage__block d-flex align-items-center col-lg-4 col-12 px-3 mb-lg-0 mb-3">
 
-                    <div class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
+                    <div
+                        class="advantage__block_img d-flex justify-content-center align-items-center col-lg-4 col-md-4 col-6">
 
                         <div class="advantage__img"><img src="./img/bonus-program.svg" alt=""></div>
                     </div>
@@ -524,11 +606,12 @@
 
 
 
-    
+
     <!----------------------FOOTER START--------------------->
     <footer class="footer">
         <div class="footer__block container-fluid d-flex justify-content-between align-items-center  flex-wrap">
-            <p class="footer__text text-lg-left text-center mb-0">Производитель: ООО "Стил Пауэр Нутришн"<br> г.Пермь, ул.Героев Хасана, 105, корп. 17/3</p>
+            <p class="footer__text text-lg-left text-center mb-0">Производитель: ООО "Стил Пауэр Нутришн"<br> г.Пермь,
+                ул.Героев Хасана, 105, корп. 17/3</p>
 
             <div class="footer__info d-flex flex-lg-row flex-column mb-lg-0 mb-3">
                 <div class="footer__social d-flex align-items-center justify-content-center mb-3">
