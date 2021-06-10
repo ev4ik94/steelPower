@@ -38,16 +38,10 @@
 
                     <div class="authorization d-lg-none d-flex">
                         <div class="authorization__info">
-                            <div class="authorization__login_img">
+                            <button class="authorization__login_img btn-auth-forms" data-id="form-signin">
                                 <img src="./img/user.svg" alt="" class="align-text-bottom">
-                            </div>
-                            <div class="authorization__login">
-                                <button>Войти</button>
-                            </div>
-                            <span class="authorization__sp">/</span>
-                            <div class="authorization__register">
-                                <button>Зарегистрироваться</button>
-                            </div>
+                            </button>
+
                         </div>
                         <button class="authorization__basket">
                             <div class="authorization__basket_img">
@@ -87,7 +81,7 @@
                     <!--                    </div>-->
 
                     <div class="collapse navbar-collapse pt-lg-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-3">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="header__link" href="#">О нас</a>
                             </li>
@@ -111,11 +105,11 @@
                                 <img src="./img/user.svg" alt="" class="align-text-bottom">
                             </div>
                             <div class="authorization__login">
-                                <button class="btn-auth-forms" id="form-signin">Войти</button>
+                                <button class="btn-auth-forms" data-id="form-signin">Войти</button>
                             </div>
                             <span class="authorization__sp">/</span>
                             <div class="authorization__register">
-                                <button class="btn-auth-forms" id="form-signup">Зарегистрироваться</button>
+                                <button class="btn-auth-forms" data-id="form-signup">Зарегистрироваться</button>
                             </div>
                         </div>
                         <button class="authorization__basket">
@@ -230,6 +224,26 @@
                 </form>
             </div>
         </div>
+
+        <!----------Popup Block ------------->
+        <div class="d-flex justify-content-center">
+            <div class="popup">
+                <div class="popup__img">
+                    <img src="./img/Popup.jpg" alt="">
+                </div>
+                <div class="popup__block">
+                    <p>Получите приглашение на закрытую распродажу</p>
+                    <input type="text" placeholder="Ваш email">
+                    <button>Получить</button>
+                    <div class="popup__check d-flex">
+                        <input type="checkbox" class="popup__checkbox">
+                        <p>Я соглашаюсь с политикой в отношении обработки <a href="">персональных данных</a> и даю
+                            согласие на получение рекламных сообщений</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-------------Authentications Forms End-------->
 
@@ -414,10 +428,8 @@
                 <div class="lider__block d-lg-block d-flex flex-wrap" id="lider-slick">
                     <div class="lider__info col-lg-12 col-6">
                         <div class="lider__img position-relative">
-
                             <div
                                 class="position-absolute not_available d-flex justify-content-center align-items-center">
-
                                 <p>Нет в наличии</p>
                             </div>
                             <img src="./img/collagen-lider.png" alt="">
@@ -427,9 +439,7 @@
                             <p class="lider__item_weight">1500 г.</p>
                             <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">
                                 <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>
-
                                 <button class="lider__item_btn disable">Нет в наличии</button>
-
                             </div>
                         </div>
                     </div>

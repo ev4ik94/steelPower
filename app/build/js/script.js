@@ -90,7 +90,9 @@ $(document).ready(() => {
         nextArrow: '<button class="lider__right lider__btn_sl position-absolute"><img src="./img/slick-right.svg" alt=""></button>'
       });
     } else {
-      $('#lider-slick').slick('unslick');
+      if ($('#lider-slick').hasClass('slick-initialized')) {
+        $('#lider-slick').slick('unslick');
+      }
     }
   }
 
@@ -99,7 +101,7 @@ $(document).ready(() => {
   /*------------ OPEN AUTH FORMS ------------------*/
 
   $('.btn-auth-forms').on('click', e => {
-    const id = e.currentTarget.getAttribute('id');
+    const id = e.currentTarget.getAttribute('data-id');
     $('.overlay-forms').addClass('active');
     $(`div[data-id=${id}]`).removeClass('d-none');
   });

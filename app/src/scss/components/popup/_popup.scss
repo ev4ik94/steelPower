@@ -1,0 +1,57 @@
+.popup {
+    max-width: 400px;
+    background-color: $white;
+
+    &__img {
+
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+    &__block {
+        padding: 35px 25px 45px 25px;
+
+        & p {
+            font-size: 22px;
+            line-height: 25px;
+            font-weight: 700;
+            color: $black;
+            margin-bottom: 30px;
+        }
+
+        & input {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 18px;
+            color: $black;
+            width: 100%;
+            padding: 16px 0 17px 20px;
+            border: none;
+            outline: none;
+            background: #E7E7E7;
+            margin-bottom: 25px;
+        }
+
+        & button {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700;
+            color: $black;
+            border: none;
+            background-color: $main;
+            width: 100%;
+            padding: 16px 0;
+            border-radius: 5px;
+        }
+    }
+    
+    &__checkbox {
+        width: 18px;
+        height: 18px;
+    }
+}
