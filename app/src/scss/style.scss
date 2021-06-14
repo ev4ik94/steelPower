@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "./variables";
 @import './node_modules/bootstrap/scss/bootstrap';
+@import "./variables";
 @import "./components/main-components/header";
 @import "./components/home/banner";
 @import "./components/home/category";
@@ -13,7 +13,7 @@
 @import "./components/catalog/catalog.scss";
 @import "./components/main-components/authentications-form";
 @import "./components/basket/basket";
-@import "./components/404/404.scss";
+@import "./components/not_found/not_found";
 @import "./components/popup/popup";
 
 

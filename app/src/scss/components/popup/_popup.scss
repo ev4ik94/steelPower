@@ -24,7 +24,7 @@
             margin-bottom: 30px;
         }
 
-        & input {
+        & input[type="text"] {
             font-weight: 300;
             font-size: 18px;
             line-height: 18px;
@@ -49,9 +49,42 @@
             border-radius: 5px;
         }
     }
+
+    &__check{
+        & input[type="checkbox"]:checked ~ label:before{
+            background: $main;
+        }
+        & input[type="checkbox"]:checked ~ label:after{
+            content: '';
+            width: 15px;
+            display: block;
+            height: 15px;
+            background-image: url(../../../img/check.svg);
+            background-position: center;
+            background-size: contain;
+            top: 8px;
+            left: -24px;
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+        & label:before{
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            left: -25px;
+            top: 5px;
+        }
+    }
     
     &__checkbox {
         width: 18px;
         height: 18px;
+        position: relative;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: 10px;
+        opacity: 0;
     }
+
 }
