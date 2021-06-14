@@ -106,8 +106,14 @@ $(document).ready(() => {
     $(`div[data-id=${id}]`).removeClass('d-none');
   });
   $('.close-forms').on('click', e => {
-    const id = e.currentTarget.getAttribute('id');
+    e.preventDefault();
     $('.overlay-forms').removeClass('active');
     $(`.overlay-forms div[data-id]`).addClass('d-none');
   });
+  /*--------OPEN POPUP TIMOUT -----------------*/
+
+  setTimeout(() => {
+    $('.overlay-forms').addClass('active');
+    $('#popup').removeClass('d-none');
+  }, 1000);
 });

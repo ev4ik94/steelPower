@@ -31,7 +31,7 @@
     & p {
         font-weight: 700;
         font-size: 24px;
-        color: $black;
+        color: #343434;;
     }
 
     & button {
@@ -47,7 +47,7 @@
         margin-bottom: 5px !important;
         font-weight: 300;
         font-size: 16px;
-        color: $black;
+        color: #343434;;
     }
 
     & input {
@@ -63,19 +63,49 @@
 
 .form__checkbox {
     & input {
-        background: #E7E7E7;
         width: 18px;
         height: 18px;
-        margin-right: 10px;
-        border: none;
+        position: relative;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-top: 5px;
+        opacity: 0;
+    }
+
+    & input[type="checkbox"]:checked ~ label:before{
+        background: $main;
+        border-color: transparent;
+    }
+    & input[type="checkbox"]:checked ~ label:after{
+        content: '';
+        width: 15px;
+        display: block;
+        height: 15px;
+        background-image: url(../../../img/check.svg);
+        background-position: center;
+        background-size: contain;
+        top: 8px;
+        left: -24px;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    & label:before{
+        content: '';
+        width: 18px;
+        border: 1px solid #343434;;
+        height: 18px;
+        position: absolute;
+        left: -25px;
+        top: 5px;
     }
     
     & p {
         font-size: 14px;
-        color: $black;
+        color: #343434;;
         
         & a {
-            color: $black;
+            color: #343434;;
         }
     }
 }
@@ -101,6 +131,6 @@ form {
 .form__sigin {
     font-size: 18px;
     font-weight: 300;
-    color: $black;
+    color: #343434;;
     padding-bottom: 35px;
 }
