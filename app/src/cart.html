@@ -152,12 +152,20 @@
     </header>
 
     <main class="container-fluid">
-        <section class="basket-main">
+        <section class="basket">
             <div class="d-flex align-items-center mb-4">
                 <h5 class="basket-main__title">Корзина</h5>
                 <p class="basket-main__number">2</p>
             </div>
-            <div class="d-flex">
+            <!------ CART IS EMPTY START -------------------->
+<!--            <div class="basket__block text-center">-->
+<!--                <h5 class="">Ваша корзина пуста и ждет наполнения</h5>-->
+<!--                <p><a href="">Перейти к покупкам </a> или просто добавьте продукты из лидеров продаж.</p>-->
+<!--            </div>-->
+            <!-------- CART IS EMPTY END-------------------->
+
+            <!-------- CART IS FULL START-------------------->
+            <div class="d-flex basket-main">
                 <div class="basket-main__block col-lg-9">
                     <div>
                         <div class="basket-main__item">
@@ -169,7 +177,7 @@
                                     <p class="basket-main__gainer_text">Гейнер Formas Gainer 1500 / молочное печенье</p>
                                 </div>
                                 <div
-                                    class="d-flex align-items-center basket-main__desc justify-content-between col-lg-3">
+                                        class="d-flex align-items-center basket-main__desc justify-content-between col-lg-3">
                                     <div class="d-flex align-items-center">
                                         <button class="basket-main__minus"><img src="./img/minus.svg" alt=""></button>
                                         <p>01</p>
@@ -194,7 +202,7 @@
                                     <p class="basket-main__gainer_text">Гейнер Formas Gainer 1500 / молочное печенье</p>
                                 </div>
                                 <div
-                                    class="d-flex align-items-center basket-main__desc justify-content-between col-lg-3">
+                                        class="d-flex align-items-center basket-main__desc justify-content-between col-lg-3">
                                     <div class="d-flex align-items-center">
                                         <button class="basket-main__minus"><img src="./img/minus.svg" alt=""></button>
                                         <p>01</p>
@@ -292,9 +300,161 @@
                     <button>Оформить заказ</button>
                 </div>
             </div>
-
+            <!-------- CART IS FULL START-------------------->
         </section>
+<!--        <section class="lider">-->
+<!--            <h3 class="lider__title d-inline-block">Лидеры продаж</h3>-->
+<!--            <div class="position-relative">-->
+<!--                <div class="lider__block d-lg-block d-flex flex-wrap" id="lider-slick">-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img position-relative">-->
 
+<!--                            <div-->
+<!--                                class="position-absolute not_available d-flex justify-content-center align-items-center">-->
+
+<!--                                <p>Нет в наличии</p>-->
+<!--                            </div>-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+
+<!--                                <button class="lider__item_btn disable">Нет в наличии</button>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img ">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img position-relative">-->
+
+<!--                            <div-->
+<!--                                class="position-absolute not_available d-flex justify-content-center align-items-center">-->
+<!--                                <p>Нет в наличии</p>-->
+<!--                            </div>-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+
+<!--                                <button class="lider__item_btn disable">Нет в наличии</button>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img ">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="lider__info col-lg-12 col-6">-->
+<!--                        <div class="lider__img">-->
+<!--                            <img src="./img/collagen-lider.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="lider__item">-->
+<!--                            <h3 class="lider__item_title">FOR MASS GAINER</h3>-->
+<!--                            <p class="lider__item_weight">1500 г.</p>-->
+<!--                            <div class="lider__item_end d-flex justify-content-between flex-lg-row flex-column">-->
+<!--                                <p class="lider__item_price d-flex align-items-center mb-lg-0 mb-1">2 050 руб.</p>-->
+<!--                                <button class="lider__item_btn">В корзину</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+        </section>
     </main>
 
     <footer class="footer">
