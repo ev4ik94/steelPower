@@ -155,6 +155,25 @@ $(document).ready(()=>{
 
     setMask()
 
+    /*==========CART PAGE================*/
+
+    /*------- Radio Buttons Event Delivery Type -------------*/
+
+    $('.item-select-type input[type="radio"]').on('click', (e)=>{
+        const buttons = Array.from($('.item-select-type input[type="radio"]'))
+
+        buttons.forEach(button=>{
+            if(button!==e.currentTarget){
+                button.checked = false
+            }
+            if(button.checked){
+                button.parentElement.classList.add('active')
+            }else{
+                button.parentElement.classList.remove('active')
+            }
+        })
+    })
+
 
 
 
