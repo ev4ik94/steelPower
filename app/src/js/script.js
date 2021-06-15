@@ -140,6 +140,23 @@ $(document).ready(()=>{
 
 
 
+    /*-------Set Mask Input-----*/
+    function setMask(){
+        const inputMask = Array.from(document.querySelectorAll('input[data-type="mask-number"]'))
+        inputMask.forEach(item=>{
+            const phoneMask = IMask(
+                item, {
+                    mask: '+{7}(000)000-00-00',
+                    lazy: false
+                });
+            console.log(item)
+        })
+    }
+
+    setMask()
+
+
+
 
 })
 

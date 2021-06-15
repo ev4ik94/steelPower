@@ -170,17 +170,17 @@
                     <div>
                         <div class="basket-main__item">
                             <div class="basket-main__info d-flex align-items-center justify-content-between">
-                                <div class="basket-main__gainer d-flex align-items-center">
-                                    <div class="basket-main__gainer_img">
+                                <div class="basket-main__gainer d-flex align-items-center col-lg-6">
+                                    <div class="basket-main__gainer_img col-lg-3">
                                         <img src="./img/main-basket.png" alt="">
                                     </div>
-                                    <p class="basket-main__gainer_text">Гейнер Formas Gainer 1500 / молочное печенье</p>
+                                    <p class="basket-main__gainer_text col-lg-8">Гейнер Formas Gainer 1500 / молочное печенье</p>
                                 </div>
-                                <div
-                                        class="d-flex align-items-center basket-main__desc justify-content-between col-lg-3">
-                                    <div class="d-flex align-items-center">
+
+                                <div class="d-flex align-items-center basket-main__desc justify-content-between col-lg-5">
+                                    <div class="d-flex align-items-center controls-items-count">
                                         <button class="basket-main__minus"><img src="./img/minus.svg" alt=""></button>
-                                        <p>01</p>
+                                        <span>01</span>
                                         <button class="basket-main__plus"><img src="./img/plus.svg" alt=""></button>
                                     </div>
                                     <div>
@@ -195,17 +195,16 @@
                         </div>
                         <div class="basket-main__item">
                             <div class="basket-main__info d-flex align-items-center justify-content-between">
-                                <div class="basket-main__gainer d-flex align-items-center">
-                                    <div class="basket-main__gainer_img">
+                                <div class="basket-main__gainer d-flex align-items-center col-lg-6">
+                                    <div class="basket-main__gainer_img col-lg-3">
                                         <img src="./img/main-basket.png" alt="">
                                     </div>
-                                    <p class="basket-main__gainer_text">Гейнер Formas Gainer 1500 / молочное печенье</p>
+                                    <p class="basket-main__gainer_text col-lg-8">Гейнер Formas Gainer 1500 / молочное печенье</p>
                                 </div>
-                                <div
-                                        class="d-flex align-items-center basket-main__desc justify-content-between col-lg-3">
-                                    <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center basket-main__desc justify-content-between col-lg-5">
+                                    <div class="d-flex align-items-center controls-items-count">
                                         <button class="basket-main__minus"><img src="./img/minus.svg" alt=""></button>
-                                        <p>01</p>
+                                        <span>01</span>
                                         <button class="basket-main__plus"><img src="./img/plus.svg" alt=""></button>
                                     </div>
                                     <div>
@@ -221,8 +220,8 @@
                     </div>
                     <div class="basket-main__inputs">
                         <form action="" class="basket-main__input">
-                            <div class="basket-main__input_location d-flex justify-content-between flex-wrap">
-                                <div class="basket-main__input_country input_group col-lg-2 col-md-6 col-12 px-lg-right-3 px-md-right-3 px-0">
+                            <div class="basket-main__input_location d-flex justify-content-between flex-wrap justify-content-between">
+                                <div class="basket-main__input_country input_group col-lg-2 col-md-5 col-12">
                                     <label>Страна</label>
                                     <select name="country" id="country">
                                         <option value="Россия">Россия</option>
@@ -230,39 +229,39 @@
                                         <option value="Россия">Казахстан</option>
                                     </select>
                                 </div>
-                                <div class="basket-main__input_adress input_group  col-lg-4 col-md-6 col-12 px-lg-3 px-md-3 px-0">
+                                <div class="basket-main__input_adress input_group  col-lg-4 col-md-5 col-12">
                                     <label>Адрес доставки</label>
-                                    <input type="text">
+                                    <input type="text" name="address">
                                 </div>
-                                <div class="basket-main__input_index input_group  col-lg-2 col-md-6 col-12 px-lg-3 px-md-left-0 px-0">
+                                <div class="basket-main__input_index input_group  col-lg-2 col-md-5 col-12">
                                     <label>Индекс</label>
-                                    <input type="text">
+                                    <input type="text" name="postCode">
                                 </div>
-                                <div class="basket-main__input_city input_group  col-lg-2 col-md-6 col-12 px-lg-left-3 px-md-left-3 px-0">
+                                <div class="basket-main__input_city input_group  col-lg-2 col-md-5 col-12">
                                     <label>Город</label>
-                                    <input type="text">
+                                    <input type="text" name="city">
                                 </div>
                             </div>
-                            <div class="basket-main__input_contact d-flex flex-wrap">
-                                <div class="col-lg-4 input_group col-md-6 col-12 px-lg-right-3 px-md-right-3 px-0">
+                            <div class="basket-main__input_contact d-flex flex-wrap justify-content-lg-start justify-content-between">
+                                <div class="col-lg-4 input_group col-lg-5 col-md-5 col-12">
                                     <label>Телефон</label>
-                                    <input type="text">
+                                    <input type="text" data-type="mask-number">
                                 </div>
-                                <div class="col-lg-4 input_group col-md-6 col-12 px-lg-left-3 px-md-left-3 px-0">
+                                <div class="col-lg-4 input_group col-lg-5 col-md-5 col-12">
                                     <label>Email</label>
-                                    <input type="text">
+                                    <input type="email" name="email">
                                 </div>
                             </div>
                             <div class="basket-main__input_name d-flex justify-content-between flex-wrap">
-                                <div class="col-lg-4 pl-0 input_group col-md-6 col-12 px-lg-right-3 px-md-right-3 px-0">
+                                <div class="col-lg-3 input_group col-md-5 col-12">
                                     <label>Фамилия</label>
-                                    <input type="text">
+                                    <input type="text" name="lastName">
                                 </div>
-                                <div class="col-lg-4 input_group col-md-6 col-12 px-lg-3 px-md-3 px-0">
+                                <div class="col-lg-3 input_group col-md-5 col-12">
                                     <label>Имя</label>
-                                    <input type="text">
+                                    <input type="text" name="firstName">
                                 </div>
-                                <div class="col-lg-4 pr-0 input_group col-md-6 col-12 px-lg-right-3 px-0">
+                                <div class="col-lg-3 pr-0 input_group col-md-5 col-12">
                                     <label>Отчество</label>
                                     <input type="text">
                                 </div>
@@ -277,7 +276,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 basket-main__order">
+                <div class="col-lg-3 basket-main__order align-self-baseline">
                     <div>
                         <div class="basket-main__order_total d-flex justify-content-between">
                             <p>Итого</p>
@@ -475,6 +474,7 @@
     </footer>
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/imask.js"></script>
     <script src="js/script.js"></script>
 </body>
 
