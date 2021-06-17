@@ -157,9 +157,9 @@
                 <h5 class="basket-main__title">Корзина</h5>
                 <p class="basket-main__number">2</p>
             </div>
-            <div class="d-flex">
-                <div class="basket-main__block col-lg-9">
-                    <div>
+            <div class="">
+                <div class="basket-main__block d-flex">
+                    <div class="col-lg-9">
                         <div class="basket-main__item">
                             <div class="basket-main__info d-flex align-items-center justify-content-between">
                                 <div class="basket-main__gainer d-flex align-items-center">
@@ -211,84 +211,82 @@
                             </div>
                         </div>
                     </div>
-                    <div class="basket-main__inputs">
-                        <form action="" class="basket-main__input">
-                            <div class="basket-main__input_location d-flex justify-content-between">
-                                <div class="basket-main__input_country col-lg-2">
-                                    <label>Страна</label>
-                                    <input type="text">
-                                </div>
-                                <div class="basket-main__input_adress  col-lg-4">
-                                    <label>Адрес доставки</label>
-                                    <input type="text">
-                                </div>
-                                <div class="basket-main__input_index  col-lg-2">
-                                    <label>Индекс</label>
-                                    <input type="text">
-                                </div>
-                                <div class="basket-main__input_city  col-lg-2">
-                                    <label>Город</label>
-                                    <input type="text">
-                                </div>
+                    <div class="col-lg-3 basket-main__order">
+                        <div>
+                            <div class="basket-main__order_total d-flex justify-content-between">
+                                <p>Итого</p>
+                                <p>990 руб.</p>
                             </div>
-                            <div class="basket-main__input_contact d-flex">
-                                <div class="col-lg-4">
-                                    <label>Телефон</label>
-                                    <input type="text">
-                                </div>
-                                <div class="col-lg-4">
-                                    <label>Email</label>
-                                    <input type="text">
-                                </div>
+                            <div class="basket-main__order_sale d-flex justify-content-between">
+                                <p>Скидка</p>
+                                <p>-1 591руб.</p>
                             </div>
-                            <div class="basket-main__input_name d-flex justify-content-between">
-                                <div class="col-lg-4 pl-0">
-                                    <label>Фамилия</label>
-                                    <input type="text">
-                                </div>
-                                <div class="col-lg-4">
-                                    <label>Имя</label>
-                                    <input type="text">
-                                </div>
-                                <div class="col-lg-4 pr-0">
-                                    <label>Отчество</label>
-                                    <input type="text">
-                                </div>
+                            <div class="basket-main__order_weight d-flex justify-content-between">
+                                <p>Вес</p>
+                                <p>1.4 кг</p>
                             </div>
-                            <div class="basket-main__input_coment d-flex flex-column">
-                                <label>Комментарий</label>
-                                <textarea type="text" placeholder="Укажите адрес пункта выдачи" rows="5"></textarea>
-                            </div>
-                            <p class="basket-main__input_desc">Ваши личные данные необходимы для отправки заказа. Мы не
-                                занимаемся рассылкой спама и не передаем данные третьим лицам.</p>
-                        </form>
-                    </div>
+                        </div>
 
+                        <div class="basket-main__order_set d-flex flex-column">
+                            <label for="">Промокод</label>
+                            <input type="text">
+                        </div>
+                        <button>Оформить заказ</button>
+                    </div>
                 </div>
-                <div class="col-lg-3 basket-main__order">
-                    <div>
-                        <div class="basket-main__order_total d-flex justify-content-between">
-                            <p>Итого</p>
-                            <p>990 руб.</p>
+                <div class="basket-main__inputs col-lg-9">
+                    <form action="" class="basket-main__input">
+                        <div class="basket-main__input_location d-flex justify-content-between">
+                            <div class="basket-main__input_country col-lg-2">
+                                <label>Страна</label>
+                                <input type="text">
+                            </div>
+                            <div class="basket-main__input_adress  col-lg-4">
+                                <label>Адрес доставки</label>
+                                <input type="text">
+                            </div>
+                            <div class="basket-main__input_index  col-lg-2">
+                                <label>Индекс</label>
+                                <input type="text">
+                            </div>
+                            <div class="basket-main__input_city  col-lg-2">
+                                <label>Город</label>
+                                <input type="text">
+                            </div>
                         </div>
-                        <div class="basket-main__order_sale d-flex justify-content-between">
-                            <p>Скидка</p>
-                            <p>-1 591руб.</p>
+                        <div class="basket-main__input_contact d-flex">
+                            <div class="col-lg-4">
+                                <label>Телефон</label>
+                                <input type="text">
+                            </div>
+                            <div class="col-lg-4">
+                                <label>Email</label>
+                                <input type="text">
+                            </div>
                         </div>
-                        <div class="basket-main__order_weight d-flex justify-content-between">
-                            <p>Вес</p>
-                            <p>1.4 кг</p>
+                        <div class="basket-main__input_name d-flex justify-content-between">
+                            <div class="col-lg-4 pl-0">
+                                <label>Фамилия</label>
+                                <input type="text">
+                            </div>
+                            <div class="col-lg-4">
+                                <label>Имя</label>
+                                <input type="text">
+                            </div>
+                            <div class="col-lg-4 pr-0">
+                                <label>Отчество</label>
+                                <input type="text">
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="basket-main__order_set d-flex flex-column">
-                        <label for="">Промокод</label>
-                        <input type="text">
-                    </div>
-                    <button>Оформить заказ</button>
+                        <div class="basket-main__input_coment d-flex flex-column">
+                            <label>Комментарий</label>
+                            <textarea type="text" placeholder="Укажите адрес пункта выдачи" rows="5"></textarea>
+                        </div>
+                        <p class="basket-main__input_desc">Ваши личные данные необходимы для отправки заказа. Мы не
+                            занимаемся рассылкой спама и не передаем данные третьим лицам.</p>
+                    </form>
                 </div>
             </div>
-
         </section>
 
     </main>

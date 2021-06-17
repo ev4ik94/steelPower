@@ -19,9 +19,6 @@
         margin-left: 20px;
     }
     
-    &__block {
-        padding-right: 20px;
-    }
 
     &__info {
         padding-right: 70px;
@@ -172,6 +169,8 @@
         background: #F8F7F7;
         border-radius: 5px;
         padding: 30px 20px 40px 20px;
+        margin-left: 20px;
+        height: 320px;
 
         &_total {
             margin-bottom: 10px;
