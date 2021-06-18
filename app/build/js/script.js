@@ -116,4 +116,36 @@ $(document).ready(() => {
     $('.overlay-forms').addClass('active');
     $('#popup').removeClass('d-none');
   }, 1000);
+  /*-------Set Mask Input-----*/
+
+  function setMask() {
+    const inputMask = Array.from(document.querySelectorAll('input[data-type="mask-number"]'));
+    inputMask.forEach(item => {
+      const phoneMask = IMask(item, {
+        mask: '+{7}(000)000-00-00',
+        lazy: false
+      });
+      console.log(item);
+    });
+  }
+
+  setMask();
+  /*==========CART PAGE================*/
+
+  /*------- Radio Buttons Event Delivery Type -------------*/
+
+  $('.item-select-type input[type="radio"]').on('click', e => {
+    const buttons = Array.from($('.item-select-type input[type="radio"]'));
+    buttons.forEach(button => {
+      if (button !== e.currentTarget) {
+        button.checked = false;
+      }
+
+      if (button.checked) {
+        button.parentElement.classList.add('active');
+      } else {
+        button.parentElement.classList.remove('active');
+      }
+    });
+  });
 });
