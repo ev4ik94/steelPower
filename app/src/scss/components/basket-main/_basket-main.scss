@@ -314,55 +314,92 @@
         
         &__desc {
             padding-right: 10px;
+            flex-grow: 1;
+        }
+
+        &__order{
+            margin-left: 0!important;
         }
     }
     
     
 }
 
-@media (max-width: 798px) {
+@media (max-width: 840px) {
     .basket-main {
-        
-        
-        
+
         &__info {
+            flex-wrap: wrap;
             padding-right: 0;
         }
-        
+
+        &__desc {
+            padding: 10px 20px;
+        }
+
+
         &__order {
             margin-left: 0;
         }
-        
+
         &__item {
             position: relative;
         }
-        
+
         &__buttonMob {
             position: absolute;
             top: 10px;
             right: 10px;
         }
-        
-        &__desc {
-            flex-grow: 1;
-        }
     }
 }
 
-@media (max-width: 700px) {
-    .basket-main {
-        
-        &__info {
-            flex-wrap: wrap;
-        }
-        
-        &__desc {
-            padding: 0 20px 0 20px;
-        }
-    }
-}
+
+
 
 @media (max-width: 450px) {
+
+    .basket-main{
+        &__info{
+            & p{
+                font-size: 16px!important;
+            }
+        }
+
+        &__order{
+           &_total{
+               & p{
+                   font-size: 20px!important;
+               }
+           }
+            &_sale, &_weight, &_set{
+                & p, & label{
+                    font-size: 16px!important;
+                }
+            }
+        }
+
+        & .input_group{
+            & label{
+                font-size: 16px;
+            }
+        }
+
+        &__input{
+            &_coment{
+                & label{
+                    font-size: 16px;
+                }
+            }
+            &_desc{
+                font-size: 14px!important;
+            }
+        }
+
+        &__number{
+            font-size: 25px;
+        }
+    }
     
     .select-type {
         flex-direction: column;
