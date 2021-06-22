@@ -113,7 +113,7 @@
             border: 1px solid $white-grey;
             box-sizing: border-box;
             border-radius: 10px;
-            padding-left: 30px;
+            padding: 0 30px 0 30px;
             margin-bottom: 50px;
 
             & p {
@@ -214,7 +214,7 @@
         }
 
         &_item {
-            padding: 25px 0;
+            padding: 25px 70px 25px 0;
 
             & p {
                 font-weight: 300;
@@ -237,7 +237,8 @@
             background: $white;
             border-radius: 5px;
             border: none;
-            padding: 10px 0;
+            padding: 10px;
+            text-align: center;
         }
 
         &_arrow {
@@ -253,13 +254,14 @@
             border-radius: 10px;
             margin: 10px 0;
         }
-        
+
         &_vision {
-            
+
             & div {
                 width: 164px;
                 height: 164px;
                 margin-right: 120px;
+
                 & img {
                     width: 100%;
                     height: 100%;
@@ -267,9 +269,9 @@
                 }
             }
         }
-        
+
         &_quantity {
-            
+
             & p {
                 font-size: 14px;
                 font-weight: 400;
@@ -279,56 +281,105 @@
     }
 }
 
+/* ACCORDION */
+
+.accordion-item {
+    background-color: none;
+    border: none;
+}
+
+.accordion-body {
+    padding: 1rem 0px;
+}
+
+.accordion-button {
+    background-color: $main !important;
+    outline: none;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg);
+}
+
+
+.accordion-button::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 25px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 10px;
+}
+
 
 /* ===========MEDIA PROFILE================ */
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .profile {
         &__unpaid {
-            
+
             &_item {
                 flex-wrap: wrap;
             }
         }
-        
+
         &__competition_win button {
             margin-left: 0;
             padding: 13px 0;
             margin: 10px 0 25px 0;
         }
-        
-        &__competition_place {
-            padding-left: 0;
-        }
-        
+
         &__unpaid_payment {
             margin-left: 0;
         }
-        
+
         &__history_number p {
             padding-left: 0;
             margin: 20px 0 10px 0;
         }
-        
+
         &__history_item {
             padding: 0;
-            
+
             & p {
                 margin-bottom: 10px;
             }
-            
+
             & span {
                 margin-bottom: 10px;
-                
+
             }
-            
+
             & button {
                 margin-bottom: 10px;
             }
         }
-        
+
         &__history_vision div {
             margin-right: 0;
         }
+    }
+
+    .accordion-button::after {
+        transform: rotate(0deg) translateX(-50%) !important;
+        bottom: 5px;
+        right: 45%;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        transform: rotate(-90deg) !important;
+    }
+    
+    .profile__history_repeat {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 361px) {
+    .profile__competition_place p {
+        font-size: 16px;
     }
 }
