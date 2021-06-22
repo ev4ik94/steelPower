@@ -279,6 +279,82 @@
             }
         }
     }
+
+    /* PROFILE FORM */
+
+    &__form {
+
+        &_top {
+            background: $main;
+            padding: 20px 40px;
+
+            & p {
+                font-size: 26px;
+                color: $black;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            & button {
+                background: transparent;
+                border: none;
+            }
+        }
+
+        &_input {
+            padding: 25px 40px 40px 40px;
+
+            & div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 18px;
+
+                & label {
+                    font-weight: 300;
+                    font-size: 22px;
+                    color: $black;
+                    margin-bottom: 10px;
+                }
+
+                & input {
+                    background: #E7E7E7;
+                    border-radius: 5px;
+                    font-weight: 300;
+                    font-size: 22px;
+                    color: $black;
+                    border: none;
+                    padding: 12px 0 12px 12px;
+                }
+            }
+        }
+
+        &_btn {
+            margin-bottom: 0 !important;
+            margin-top: 30px;
+        }
+
+        &_change {
+            background: $main;
+            border-radius: 5px;
+            border: none;
+            padding: 13px;
+            font-size: 18px;
+            font-weight: 700;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        &_password {
+            background: #F8F7F7;
+            border-radius: 5px;
+            border: none;
+            padding: 13px;
+            font-size: 18px;
+            font-weight: 700;
+            color: $black;
+        }
+    }
+
 }
 
 /* ACCORDION */
@@ -372,7 +448,7 @@
     .accordion-button:not(.collapsed)::after {
         transform: rotate(-90deg) !important;
     }
-    
+
     .profile__history_repeat {
         margin-bottom: 30px;
     }
