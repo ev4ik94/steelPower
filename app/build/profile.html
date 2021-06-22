@@ -153,9 +153,9 @@
     <main class="container-fluid profile">
         <section class="profile__info">
             <div class="profile__desc">
-                <div class="profile__name d-flex">
+                <div class="profile__name d-flex flex-column flex-lg-row">
                     <p>Фамилия Имя Отчество</p>
-                    <button class="col-3">Редактировать профиль</button>
+                    <button class="col-lg-3 col-md-6 col-sm-9 col-12">Редактировать профиль</button>
                 </div>
                 <div class="profile__score d-flex align-items-center">
                     <p>У меня <span>1000</span> баллов</p>
@@ -166,25 +166,25 @@
                 </div>
             </div>
             <div class="profile__competition">
-                <div class="profile__competition_win d-flex">
+                <div class="profile__competition_win d-flex flex-column flex-lg-row">
                     <p>Мои победы</p>
-                    <button class="col-2">Новое выступление</button>
+                    <button class="col-lg-2 col-md-6 col-sm-9 col-12">Новое выступление</button>
                 </div>
-                <div class="profile__competition_desc col-12 d-flex justify-content-between">
-                    <p class="col-2">Название</p>
-                    <p class="col-1">Результат</p>
-                    <p class="col-1">Дата</p>
+                <div class="profile__competition_desc col-12 d-lg-flex justify-content-between d-none">
+                    <p class="col-lg-2">Название</p>
+                    <p class="col-lg-1">Результат</p>
+                    <p class="col-lg-1">Дата</p>
                 </div>
-                <div class="profile__competition_place col-12 d-flex justify-content-between">
-                    <p class="col-2">Чемпионат по чему-то</p>
-                    <p class="col-1">1 место</p>
-                    <p class="col-1">19.01.2021</p>
+                <div class="profile__competition_place col-12 d-flex justify-content-lg-between justify-content-around">
+                    <p class="col-lg-2 col-3">Чемпионат по чему-то</p>
+                    <p class="col-lg-1 col-3">1 место</p>
+                    <p class="col-lg-1 col-3">19.01.2021</p>
                 </div>
             </div>
         </section>
         <section class="profile__unpaid">
             <p class="profile__unpaid_text">Неоплаченный заказ</p>
-            <div class="d-flex">
+            <div class="d-flex profile__unpaid_item">
                 <div class="col-lg-9 col-md-12 col-sm-12">
                     <div class="basket-main__item">
                         <div class="basket-main__info d-flex align-items-center justify-content-between">
@@ -252,18 +252,18 @@
         <section class="profile__history">
             <p class="profile__history_title">История заказов</p>
             <div>
-                <div class="profile__history_info d-flex justify-content-between">
-                    <div class="profile__history_number col-lg-6 d-flex align-items-center">
+                <div class="profile__history_info d-flex justify-content-between flex-lg-row flex-column">
+                    <div class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
                         <p>Заказ № <span>ХХХ</span></p>
                     </div>
-                    <div class="profile__history_item d-flex col-lg-6 justify-content-around align-items-center">
+                    <div class="profile__history_item d-flex col-lg-6 col-md-9 justify-content-around align-items-center flex-lg-row flex-column">
                         <p>20.11.2020</p>
                         <span>2500 руб.</span>
-                        <button class="profile__history_repeat col-lg-3">Повторить заказ</button>
+                        <button class="profile__history_repeat col-lg-3 col-md-4 col-6">Повторить заказ</button>
                         <button class="profile__history_arrow"><img src="./img/expand.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="profile__history_uncover d-flex justify-content-between">
+                <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column">
                     <div class=" profile__history_vision d-flex align-items-center col-lg-5">
                         <div><img src="./img/history.png" alt=""></div>
                         <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>
@@ -274,42 +274,7 @@
                         <p>990 руб.</p>
                     </div>
                 </div>
-                <div class="profile__history_uncover d-flex justify-content-between">
-                    <div class=" profile__history_vision d-flex align-items-center col-lg-5">
-                        <div><img src="./img/history.png" alt=""></div>
-                        <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>
-                    </div>
-                    <div class="profile__history_quantity col-lg-7 d-flex align-items-center justify-content-evenly">
-                        <p>1</p>
-                        <p>1700 гр.</p>
-                        <p>990 руб.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="profile__history_info d-flex justify-content-between">
-                    <div class="profile__history_number col-lg-6 d-flex align-items-center">
-                        <p>Заказ № <span>ХХХ</span></p>
-                    </div>
-                    <div class="profile__history_item d-flex col-lg-6 justify-content-around align-items-center">
-                        <p>20.11.2020</p>
-                        <span>2500 руб.</span>
-                        <button class="profile__history_repeat col-lg-3">Повторить заказ</button>
-                        <button class="profile__history_arrow"><img src="./img/roll-up.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="profile__history_uncover d-flex justify-content-between d-none">
-                    <div class=" profile__history_vision d-flex align-items-center col-lg-5">
-                        <div><img src="./img/history.png" alt=""></div>
-                        <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>
-                    </div>
-                    <div class="profile__history_quantity col-lg-7 d-flex align-items-center justify-content-evenly">
-                        <p>1</p>
-                        <p>1700 гр.</p>
-                        <p>990 руб.</p>
-                    </div>
-                </div>
-                <div class="profile__history_uncover d-flex justify-content-between d-none">
+                <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column">
                     <div class=" profile__history_vision d-flex align-items-center col-lg-5">
                         <div><img src="./img/history.png" alt=""></div>
                         <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>
@@ -322,18 +287,18 @@
                 </div>
             </div>
             <div>
-                <div class="profile__history_info d-flex justify-content-between">
-                    <div class="profile__history_number col-lg-6 d-flex align-items-center">
+                <div class="profile__history_info d-flex justify-content-between flex-lg-row flex-column">
+                    <div class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
                         <p>Заказ № <span>ХХХ</span></p>
                     </div>
-                    <div class="profile__history_item d-flex col-lg-6 justify-content-around align-items-center">
+                    <div class="profile__history_item d-flex col-lg-6 col-md-9 justify-content-around align-items-center flex-lg-row flex-column">
                         <p>20.11.2020</p>
                         <span>2500 руб.</span>
-                        <button class="profile__history_repeat col-lg-3">Повторить заказ</button>
+                        <button class="profile__history_repeat col-lg-3 col-md-4 col-6">Повторить заказ</button>
                         <button class="profile__history_arrow"><img src="./img/roll-up.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="profile__history_uncover d-flex justify-content-between d-none">
+                <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column d-none">
                     <div class=" profile__history_vision d-flex align-items-center col-lg-5">
                         <div><img src="./img/history.png" alt=""></div>
                         <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>
@@ -344,7 +309,42 @@
                         <p>990 руб.</p>
                     </div>
                 </div>
-                <div class="profile__history_uncover d-flex justify-content-between d-none">
+                <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column d-none">
+                    <div class=" profile__history_vision d-flex align-items-center col-lg-5">
+                        <div><img src="./img/history.png" alt=""></div>
+                        <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>
+                    </div>
+                    <div class="profile__history_quantity col-lg-7 d-flex align-items-center justify-content-evenly">
+                        <p>1</p>
+                        <p>1700 гр.</p>
+                        <p>990 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="profile__history_info d-flex justify-content-between flex-lg-row flex-column">
+                    <div class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        <p>Заказ № <span>ХХХ</span></p>
+                    </div>
+                    <div class="profile__history_item d-flex col-lg-6 col-md-9 justify-content-around align-items-center flex-lg-row flex-column">
+                        <p>20.11.2020</p>
+                        <span>2500 руб.</span>
+                        <button class="profile__history_repeat col-lg-3 col-md-4 col-6">Повторить заказ</button>
+                        <button class="profile__history_arrow"><img src="./img/roll-up.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column d-none">
+                    <div class=" profile__history_vision d-flex align-items-center col-lg-5">
+                        <div><img src="./img/history.png" alt=""></div>
+                        <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>
+                    </div>
+                    <div class="profile__history_quantity col-lg-7 d-flex align-items-center justify-content-evenly">
+                        <p>1</p>
+                        <p>1700 гр.</p>
+                        <p>990 руб.</p>
+                    </div>
+                </div>
+                <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column d-none">
                     <div class=" profile__history_vision d-flex align-items-center col-lg-5">
                         <div><img src="./img/history.png" alt=""></div>
                         <p class="col-5">Гейнер Formas Gainer 1500 / молочное печенье</p>

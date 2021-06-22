@@ -277,7 +277,58 @@
             }
         }
     }
+}
 
 
+/* ===========MEDIA PROFILE================ */
 
+@media (max-width: 991px) {
+    .profile {
+        &__unpaid {
+            
+            &_item {
+                flex-wrap: wrap;
+            }
+        }
+        
+        &__competition_win button {
+            margin-left: 0;
+            padding: 13px 0;
+            margin: 10px 0 25px 0;
+        }
+        
+        &__competition_place {
+            padding-left: 0;
+        }
+        
+        &__unpaid_payment {
+            margin-left: 0;
+        }
+        
+        &__history_number p {
+            padding-left: 0;
+            margin: 20px 0 10px 0;
+        }
+        
+        &__history_item {
+            padding: 0;
+            
+            & p {
+                margin-bottom: 10px;
+            }
+            
+            & span {
+                margin-bottom: 10px;
+                
+            }
+            
+            & button {
+                margin-bottom: 10px;
+            }
+        }
+        
+        &__history_vision div {
+            margin-right: 0;
+        }
+    }
 }
