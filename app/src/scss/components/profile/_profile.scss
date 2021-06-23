@@ -9,7 +9,6 @@
             font-size: 25px;
             font-weight: 700;
             color: $black;
-            margin-bottom: 0;
         }
 
         & button {
@@ -31,7 +30,6 @@
             font-size: 24px;
             font-weight: 400;
             color: $black;
-            margin-bottom: 0;
 
             & span {
                 font-size: 36px;
@@ -73,7 +71,6 @@
         &_win {
 
             & p {
-                margin-bottom: 0;
                 font-size: 25px;
                 font-weight: 700;
                 color: $black;
@@ -403,6 +400,13 @@
 
             &_item {
                 flex-wrap: wrap;
+            }
+        }
+
+        &__name {
+
+            & button {
+                margin-left: 0px;
             }
         }
 
