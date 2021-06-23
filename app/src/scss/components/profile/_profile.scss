@@ -311,7 +311,7 @@
 
                 & label {
                     font-weight: 300;
-                    font-size: 22px;
+                    font-size: 16px;
                     color: $black;
                     margin-bottom: 10px;
                 }
@@ -320,7 +320,7 @@
                     background: #E7E7E7;
                     border-radius: 5px;
                     font-weight: 300;
-                    font-size: 22px;
+                    font-size: 18px;
                     color: $black;
                     border: none;
                     padding: 12px 0 12px 12px;
@@ -360,7 +360,7 @@
 /* ACCORDION */
 
 .accordion-item {
-    background-color: none;
+    background-color: transparent;
     border: none;
 }
 
@@ -375,15 +375,19 @@
     padding: 0 !important;
 }
 
-.accordion-button:not(.collapsed)::after {
+.accordion-button[aria-expanded='false']::after {
+    transform: rotate(-90deg);
+}
+
+.accordion-button[aria-expanded='true']:after{
     transform: rotate(0deg);
 }
 
 
-.accordion-button::after {
-    transform: rotate(-90deg);
+.accordion-button:after {
     position: absolute;
     right: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E")!important;
 }
 
 .accordion-item:first-of-type .accordion-button {
@@ -403,7 +407,6 @@
         }
 
         &__competition_win button {
-            margin-left: 0;
             padding: 13px 0;
             margin: 10px 0 25px 0;
         }
@@ -440,14 +443,10 @@
     }
 
     .accordion-button::after {
-        transform: rotate(0deg) translateX(-50%) !important;
         bottom: 5px;
-        right: 45%;
+        right: 50%;
     }
 
-    .accordion-button:not(.collapsed)::after {
-        transform: rotate(-90deg) !important;
-    }
 
     .profile__history_repeat {
         margin-bottom: 30px;

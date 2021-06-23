@@ -30,58 +30,57 @@
 
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="/">
                         <img src="./img/logo.svg" alt="">
                     </a>
 
-                    <!-- Не авторизованный пользователь -->
+                    <!-- Не авторизованный пользователь START -->
 
                     <div class="authorization d-lg-none d-flex">
                         <div class="authorization__info">
-                            <button class="authorization__login_img btn-auth-forms" data-id="form-signin">
+                            <button class="authorization__login_img">
                                 <img src="./img/user.svg" alt="" class="align-text-bottom">
                             </button>
-
                         </div>
-                        <button class="authorization__basket">
-                            <div class="authorization__basket_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <p class="authorization__basket_text">Корзина</p>
 
-                        </button>
-
-                        <button class="authorization__mob_basket position-relative">
+                        <a href="/cart.html" class="authorization__mob_basket position-relative">
                             <div class="authorization__mob_img">
                                 <img src="./img/basket.svg" alt="">
                             </div>
-
-                            <span
-                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
-                        </button>
+                            <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
+                        </a>
                     </div>
 
+                    <!-- Не авторизованный пользователь END -->
 
-                    <!-- Авторизованный пользователь -->
 
-                    <!--                    <div class="authorized-user d-flex">-->
-                    <!--                        <button class="authorized-user__button">-->
-                    <!--                            <img src="./img/user.svg" alt="">-->
-                    <!--                        </button>-->
-                    <!--                        <button class="authorized-user__info d-flex justify-content-between align-items-center">-->
-                    <!--                            <div class="position-relative d-flex">-->
-                    <!--                                <div>-->
-                    <!--                                    <img src="./img/basket.svg" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <span-->
-                    <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
-                    <!--                            </div>-->
-                    <!--                            <p>Корзина</p>-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
+                    <!-- Авторизованный пользователь START -->
+
+<!--                    <div class="authorized-user d-flex">-->
+<!--                        <a href="/profile.html" class="authorized-user__button">-->
+<!--                            <img src="./img/user.svg" alt="">-->
+<!--                        </a>-->
+<!--                        <a href="/cart.html" class="authorized-user__info d-flex justify-content-between align-items-center">-->
+<!--                            <div class="position-relative d-flex">-->
+<!--                                <div>-->
+<!--                                    <img src="./img/basket.svg" alt="">-->
+<!--                                </div>-->
+<!--                                <span class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
+<!--                            </div>-->
+<!--                            <p>Корзина</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+
+                    <!-- Авторизованный пользователь END -->
 
                     <div class="collapse navbar-collapse pt-lg-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-lg-0 pt-3">
+                            <li class="nav-item d-lg-none d-block">
+                                <button class="btn-popup-forms header__link" data-id="form-signin">Войти</button>
+                            </li>
+                            <li class="nav-item d-lg-none d-block">
+                                <button class="btn-popup-forms header__link" data-id="form-signup">Зарегистрироваться</button>
+                            </li>
                             <li class="nav-item">
                                 <a class="header__link" href="#">О нас</a>
                             </li>
@@ -98,54 +97,50 @@
                     </div>
 
 
-                    <!-- Не авторизованный пользователь -->
+                    <!-- Не авторизованный пользователь START -->
                     <div class="authorization d-lg-flex d-none">
                         <div class="authorization__info">
                             <div class="authorization__login_img">
                                 <img src="./img/user.svg" alt="" class="align-text-bottom">
                             </div>
                             <div class="authorization__login">
-                                <button class="btn-auth-forms" data-id="form-signin">Войти</button>
+                                <button class="btn-popup-forms" data-id="form-signin">Войти</button>
                             </div>
                             <span class="authorization__sp">/</span>
                             <div class="authorization__register">
-                                <button class="btn-auth-forms" data-id="form-signup">Зарегистрироваться</button>
+                                <button class="btn-popup-forms" data-id="form-signup">Зарегистрироваться</button>
                             </div>
                         </div>
-                        <button class="authorization__basket">
+                        <a href="/cart.html" class="authorization__basket">
                             <div class="authorization__basket_img">
                                 <img src="./img/basket.svg" alt="">
                             </div>
                             <p class="authorization__basket_text">Корзина</p>
-                        </button>
+                        </a>
 
-                        <button class="authorization__mob_basket position-relative">
-                            <div class="authorization__mob_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <span
-                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
-                        </button>
                     </div>
+                    <!-- Не авторизованный пользователь END -->
 
 
-                    <!-- Авторизованный пользователь -->
+                    <!-- Авторизованный пользователь START -->
 
-                    <!--                    <div class="authorized-user d-flex">-->
-                    <!--                        <button class="authorized-user__button">-->
-                    <!--                            <img src="./img/user.svg" alt="">-->
-                    <!--                        </button>-->
-                    <!--                        <button class="authorized-user__info d-flex justify-content-between align-items-center">-->
-                    <!--                            <div class="position-relative d-flex">-->
-                    <!--                                <div>-->
-                    <!--                                    <img src="./img/basket.svg" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <span-->
-                    <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
-                    <!--                            </div>-->
-                    <!--                            <p>Корзина</p>-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
+<!--                    <div class="authorized-user d-lg-flex d-none">-->
+<!--                        <a href="/profile.html" class="authorized-user__button">-->
+<!--                            <img src="./img/user.svg" alt="">-->
+<!--                        </a>-->
+<!--                        <a href="/cart.html" class="authorized-user__info d-flex justify-content-between align-items-center">-->
+<!--                            <div class="position-relative d-flex">-->
+<!--                                <div>-->
+<!--                                    <img src="./img/basket.svg" alt="">-->
+<!--                                </div>-->
+<!--                                <span-->
+<!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
+<!--                            </div>-->
+<!--                            <p>Корзина</p>-->
+<!--                        </a>-->
+<!--                    </div>-->
+
+                    <!-- Авторизованный пользователь END -->
 
                 </div>
             </nav>
@@ -339,7 +334,7 @@
 
             <section class="category d-lg-flex d-block flex-lg-wrap  justify-content-start" id="categories-home">
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="d-flex justify-content-between">
                             <div class="d-flex flex-column justify-content-center">
                                 <span class="category__span">Скидка</span>
@@ -351,72 +346,72 @@
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
                                 alt=""></div>
                         <p class="category__text">Протеины</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
                                 alt=""></div>
                         <p class="category__text">Аминокислоты</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
                                 alt=""></div>
                         <p class="category__text">Коллагены и хондропротекторы</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/noise.png" alt=""></div>
                         <p class="category__text">Энергетики</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
                                 alt=""></div>
                         <p class="category__text">Изотоники</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/collagen-lider.png"
                                 alt=""></div>
                         <p class="category__text">Жиросжигатели</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/omega-3.png" alt=""></div>
                         <p class="category__text">Полиненасыщенные жирные кислоты</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/sneki.png" alt=""></div>
                         <p class="category__text">Протеиновые снэки</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/syrup.png" alt=""></div>
                         <p class="category__text">Напитки и сиропы</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/shake.png" alt=""></div>
                         <p class="category__text">Аксессуары и шейкеры</p>
                     </a>
                 </div>
                 <div class="col-2">
-                    <a href="#" class="category__link d-flex flex-column justify-content-between">
+                    <a href="/catalog.html" class="category__link d-flex flex-column justify-content-between">
                         <div class="category__img d-flex justify-content-end"><img src="./img/vitamins.png" alt="">
                         </div>
                         <p class="category__text">Витамины</p>

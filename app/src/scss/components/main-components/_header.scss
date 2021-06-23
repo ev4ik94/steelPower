@@ -15,6 +15,9 @@ header {
 }
 
 .header__link {
+    background: transparent;
+    border: none;
+    outline: none;
     font-size: 16px;
     line-height: 16px;
     color: $black;
@@ -63,6 +66,7 @@ header {
     }
 
     &__basket {
+        background-color: $grey;
         display: flex;
         align-items: center;
         padding: 10px 20px 10px 17px;
@@ -191,134 +195,126 @@ header {
 }
 
 
-
-/* ================MENU MEDIA ADAPTATION================ */
-
-@media (max-width: 1325px) {
-    .authorization {
-
-
         /* ================MENU MEDIA ADAPTATION================ */
 
-        @media (max-width: 1325px) {
-            .authorization {
+    @media (max-width: 1325px) {
+        .authorization {
 
-
-                &__basket {
-                    padding: 7px 15px;
-                }
-            }
-
-
-            .header__link {
-                padding-right: 0 !important;
-            }
-
-            .header__logo {
-                width: 225px;
-            }
-
-
-
-            .header__link {
-                padding-right: 0 !important;
-            }
-
-            .header__logo {
-                width: 225px;
-            }
-
-
-            .navbar-nav {
-                margin-right: 0 !important;
+            &__basket {
+                padding: 7px 15px;
             }
         }
 
 
-
-        @media (max-width: 1200px) {
-            .authorization {
-
-                &__basket {
-                    &_text {
-                        font-size: 14px;
-                    }
-                }
-
-                &__info {
-                    & button {
-                        font-size: 14px;
-                    }
-                }
-            }
-
-
-            .header__link {
-                font-size: 14px;
-            }
-
-            .header__logo {
-                width: 150px;
-            }
-
+        .header__link {
+            padding-right: 0 !important;
         }
 
-        @media (max-width: 992px) {
-            .authorization {
+        .header__logo {
+            width: 225px;
+        }
 
 
-                &__basket {
-                    display: none;
+
+        .header__link {
+            padding-right: 0 !important;
+        }
+
+        .header__logo {
+            width: 225px;
+        }
+
+
+        .navbar-nav {
+            margin-right: 0 !important;
+        }
+    }
+
+
+
+    @media (max-width: 1200px) {
+        .authorization {
+
+            &__basket {
+                &_text {
+                    font-size: 14px;
                 }
-
-                &__register {
-                    display: none;
-                }
-
-                &__sp {
-                    display: none;
-                }
-
-                &__login {
-                    display: none;
-                }
-
-                &__mob_basket {
-                    display: block;
-                }
-
             }
 
-            .header__link {
-                font-size: 16px;
-                padding-left: 0 !important;
+            &__info {
+                & button {
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+        .header__link {
+            font-size: 14px;
+        }
+
+        .header__logo {
+            width: 150px;
+        }
+
+    }
+
+    @media (max-width: 992px) {
+        .authorization {
+
+
+            &__basket {
+                display: none;
             }
 
-
-            .header__logo {
-                width: 225px;
+            &__register {
+                display: none;
             }
 
+            &__sp {
+                display: none;
+            }
 
+            &__login {
+                display: none;
+            }
 
-            .navbar__button_tog {
+            &__mob_basket {
                 display: block;
             }
 
-
-            .authorized-user {
-                align-items: center !important;
-            }
-
-            .authorized-user__button {
-                width: 40px;
-                height: 40px;
-            }
-
-            .authorized-user__info {
-                padding: 7px 12px 7px 10px;
-            }
         }
+
+        .header__link {
+            font-size: 16px;
+            padding-left: 0 !important;
+        }
+
+
+        .header__logo {
+            width: 225px;
+        }
+
+
+
+        .navbar__button_tog {
+            display: block;
+        }
+
+
+        .authorized-user {
+            align-items: center !important;
+        }
+
+        .authorized-user__button {
+            width: 40px;
+            height: 40px;
+        }
+
+        .authorized-user__info {
+            padding: 7px 12px 7px 10px;
+        }
+    }
 
         @media (max-width: 523px) {
 
@@ -347,8 +343,8 @@ header {
 
 
         }
-    }
-}
+
+
 
 @media (max-width: 400px) {
     .header__logo {
@@ -381,4 +377,5 @@ header {
     .header__logo {
         width: 180px;
     }
-}    
+}
+

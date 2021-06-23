@@ -100,8 +100,10 @@ $(document).ready(() => {
   windowResize();
   /*------------ OPEN AUTH FORMS ------------------*/
 
-  $('.btn-auth-forms').on('click', e => {
+  $('.btn-popup-forms').on('click', e => {
+    e.preventDefault();
     const id = e.currentTarget.getAttribute('data-id');
+    $(`.overlay-forms div[data-id]`).addClass('d-none');
     $('.overlay-forms').addClass('active');
     $(`div[data-id=${id}]`).removeClass('d-none');
   });
@@ -112,11 +114,16 @@ $(document).ready(() => {
   });
   /*--------OPEN POPUP TIMOUT -----------------*/
 
-  setTimeout(() => {
-    $('.overlay-forms').addClass('active');
-    $('#popup').removeClass('d-none');
-  }, 1000);
+  if (!localStorage.getItem('popup')) {
+    setTimeout(() => {
+      $('.overlay-forms').addClass('active');
+      localStorage.setItem('popup', 'show');
+      $(`.overlay-forms div[data-id]`).addClass('d-none');
+      $('#popup').removeClass('d-none');
+    }, 1000);
+  }
   /*-------Set Mask Input-----*/
+
 
   function setMask() {
     const inputMask = Array.from(document.querySelectorAll('input[data-type="mask-number"]'));

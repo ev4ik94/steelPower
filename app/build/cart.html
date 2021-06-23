@@ -15,141 +15,237 @@
 </head>
 
 <body>
-    <!----------------------NAVBAR START--------------------->
-    <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-light navbar-expand-lg">
-                <div class="container-fluid ps-0">
-                    <button class="navbar__button_tog d-lg-none d-block" type="button" data-bs-toggle="collapse"
+<!----------------------NAVBAR START--------------------->
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light navbar-expand-lg">
+
+
+            <div class="container-fluid ps-0">
+
+                <button class="navbar__button_tog d-lg-none d-block" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="header__logo" href="#">
-                        <img src="./img/logo.svg" alt="">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="header__logo" href="/">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+
+                <!-- Не авторизованный пользователь START -->
+
+                <div class="authorization d-lg-none d-flex">
+                    <div class="authorization__info">
+                        <button class="authorization__login_img">
+                            <img src="./img/user.svg" alt="" class="align-text-bottom">
+                        </button>
+                    </div>
+
+                    <a href="/cart.html" class="authorization__mob_basket position-relative">
+                        <div class="authorization__mob_img">
+                            <img src="./img/basket.svg" alt="">
+                        </div>
+                        <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
                     </a>
-                    <!-- Не авторизованный пользователь -->
+                </div>
+
+                <!-- Не авторизованный пользователь END -->
 
 
-                    <div class="authorization d-lg-none d-flex">
-                        <div class="authorization__info">
-                            <div class="authorization__login_img">
-                                <img src="./img/user.svg" alt="" class="align-text-bottom">
-                            </div>
-                            <div class="authorization__login">
-                                <button>Войти</button>
-                            </div>
-                            <span class="authorization__sp">/</span>
-                            <div class="authorization__register">
-                                <button>Зарегистрироваться</button>
-                            </div>
+                <!-- Авторизованный пользователь START -->
+
+                <!--                    <div class="authorized-user d-flex">-->
+                <!--                        <a href="/profile.html" class="authorized-user__button">-->
+                <!--                            <img src="./img/user.svg" alt="">-->
+                <!--                        </a>-->
+                <!--                        <a href="/cart.html" class="authorized-user__info d-flex justify-content-between align-items-center">-->
+                <!--                            <div class="position-relative d-flex">-->
+                <!--                                <div>-->
+                <!--                                    <img src="./img/basket.svg" alt="">-->
+                <!--                                </div>-->
+                <!--                                <span class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
+                <!--                            </div>-->
+                <!--                            <p>Корзина</p>-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+
+                <!-- Авторизованный пользователь END -->
+
+                <div class="collapse navbar-collapse pt-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-lg-0 pt-3">
+                        <li class="nav-item d-lg-none d-block">
+                            <button class="btn-popup-forms header__link" data-id="form-signin">Войти</button>
+                        </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <button class="btn-popup-forms header__link" data-id="form-signup">Зарегистрироваться</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">Сотрудничество</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">SP-TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Не авторизованный пользователь START -->
+                <div class="authorization d-lg-flex d-none">
+                    <div class="authorization__info">
+                        <div class="authorization__login_img">
+                            <img src="./img/user.svg" alt="" class="align-text-bottom">
                         </div>
-                        <button class="authorization__basket">
-                            <div class="authorization__basket_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <p class="authorization__basket_text">Корзина</p>
-                        </button>
-
-                        <button class="authorization__mob_basket position-relative">
-                            <div class="authorization__mob_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <span
-                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
-                        </button>
-                    </div>
-
-
-                    <!-- Авторизованный пользователь -->
-
-                    <!--                    <div class="authorized-user d-flex">-->
-                    <!--                        <button class="authorized-user__button">-->
-                    <!--                            <img src="./img/user.svg" alt="">-->
-                    <!--                        </button>-->
-                    <!--                        <button class="authorized-user__info d-flex justify-content-between align-items-center">-->
-                    <!--                            <div class="position-relative d-flex">-->
-                    <!--                                <div>-->
-                    <!--                                    <img src="./img/basket.svg" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <span-->
-                    <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
-                    <!--                            </div>-->
-                    <!--                            <p>Корзина</p>-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
-                    <div class="collapse navbar-collapse pt-lg-0 pt-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="header__link" href="#">О нас</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="header__link" href="#">Сотрудничество</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="header__link" href="#">SP-TEAM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="header__link" href="#">Доставка и оплата</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Не авторизованный пользователь -->
-
-
-                    <div class="authorization d-lg-flex d-none">
-                        <div class="authorization__info">
-                            <div class="authorization__login_img">
-                                <img src="./img/user.svg" alt="" class="align-text-bottom">
-                            </div>
-                            <div class="authorization__login">
-                                <button>Войти</button>
-                            </div>
-                            <span class="authorization__sp">/</span>
-                            <div class="authorization__register">
-                                <button>Зарегистрироваться</button>
-                            </div>
+                        <div class="authorization__login">
+                            <button class="btn-popup-forms" data-id="form-signin">Войти</button>
                         </div>
-                        <button class="authorization__basket">
-                            <div class="authorization__basket_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <p class="authorization__basket_text">Корзина</p>
-                        </button>
-
-                        <button class="authorization__mob_basket position-relative">
-                            <div class="authorization__mob_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <span
-                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
-                        </button>
+                        <span class="authorization__sp">/</span>
+                        <div class="authorization__register">
+                            <button class="btn-popup-forms" data-id="form-signup">Зарегистрироваться</button>
+                        </div>
                     </div>
-
-
-                    <!-- Авторизованный пользователь -->
-
-                    <!--                    <div class="authorized-user d-flex">-->
-                    <!--                        <button class="authorized-user__button">-->
-                    <!--                            <img src="./img/user.svg" alt="">-->
-                    <!--                        </button>-->
-                    <!--                        <button class="authorized-user__info d-flex justify-content-between align-items-center">-->
-                    <!--                            <div class="position-relative d-flex">-->
-                    <!--                                <div>-->
-                    <!--                                    <img src="./img/basket.svg" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <span-->
-                    <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
-                    <!--                            </div>-->
-                    <!--                            <p>Корзина</p>-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
+                    <a href="/cart.html" class="authorization__basket">
+                        <div class="authorization__basket_img">
+                            <img src="./img/basket.svg" alt="">
+                        </div>
+                        <p class="authorization__basket_text">Корзина</p>
+                    </a>
 
                 </div>
-            </nav>
+                <!-- Не авторизованный пользователь END -->
+
+
+                <!-- Авторизованный пользователь START -->
+
+                <!--                    <div class="authorized-user d-lg-flex d-none">-->
+                <!--                        <a href="/profile.html" class="authorized-user__button">-->
+                <!--                            <img src="./img/user.svg" alt="">-->
+                <!--                        </a>-->
+                <!--                        <a href="/cart.html" class="authorized-user__info d-flex justify-content-between align-items-center">-->
+                <!--                            <div class="position-relative d-flex">-->
+                <!--                                <div>-->
+                <!--                                    <img src="./img/basket.svg" alt="">-->
+                <!--                                </div>-->
+                <!--                                <span-->
+                <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
+                <!--                            </div>-->
+                <!--                            <p>Корзина</p>-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+
+                <!-- Авторизованный пользователь END -->
+
+            </div>
+        </nav>
+    </div>
+</header>
+<!----------------------NAVBAR END--------------------->
+
+    <!-------------Authentications Forms Start-------->
+    <div class="overlay-forms">
+        <div class="wrap-forms">
+            <!------------Form Autherization------------>
+            <div data-id="form-signup" class="d-none">
+                <form action="" class="col-lg-4 mx-auto bg-white">
+                    <div class="form__header ">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0">Регистрация</p>
+                            <button class="close-forms"><img src="./img/close.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="form__main">
+                        <div class="form__group">
+                            <p><label for="auth-lastname">Фамилия*</label></p>
+                            <input type="text" id="auth-lastname" name="lastName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-name">Имя*</label></p>
+                            <input type="text" id="auth-name" name="firstName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-fatherName">Отчество</label></p>
+                            <input type="text" id="auth-fatherName" name="fatherName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-mail">Почта*</label></p>
+                            <input type="text" id="auth-mail" name="mail">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-password">Придумайте пароль*</label></p>
+                            <input type="text" id="auth-password" name="password">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-confirmPassword">Повторите пароль*</label></p>
+                            <input type="text" id="auth-confirmPassword" name="confirmPassword">
+                        </div>
+                        <div class="form__checkbox d-flex">
+                            <input type="checkbox">
+                            <label class="mb-0 position-relative col-11">Принимаю соглашение на обработку <a href="">персональных данных</a></label>
+
+
+                        </div>
+                        <button type="submit ">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!------------Form Login------------>
+            <div data-id="form-signin" class="d-none">
+                <form action="" class="col-lg-4 mx-auto bg-white">
+                    <div class="form__header ">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0">Вход</p>
+                            <button class="close-forms"><img src="./img/close.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="form__main">
+                        <div class="form__group">
+                            <p><label for="sigin-mail">Почта</label></p>
+                            <input type="text" id="sigin-mail" name="sigin-mail">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-lastname">Пароль</label></p>
+                            <input type="text" id="sigin-password" name="sigin-password">
+                        </div>
+                        <button type="submit">Войти</button>
+                        <a href="" class="form__sigin d-flex justify-content-center">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
         </div>
-    </header>
+
+        <!----------Popup Block ------------->
+        <div class="d-flex justify-content-center d-none" id="popup" data-id="popup">
+
+            <div class="popup position-relative">
+                <button class="close-forms position-absolute"><img src="./img/close.svg" alt=""></button>
+                <div class="popup__img">
+                    <img src="./img/Popup.jpg" alt="">
+                </div>
+                <div class="popup__block">
+                    <p>Получите приглашение на закрытую распродажу</p>
+                    <input type="text" placeholder="Ваш email">
+                    <button>Получить</button>
+                    <div class="popup__check d-flex mt-3">
+                        <input type="checkbox" class="popup__checkbox">
+                        <label class="position-relative col-11">Я соглашаюсь с политикой в отношении обработки <a href="">персональных данных</a> и даю
+                            согласие на получение рекламных сообщений</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-------------Authentications Forms End-------->
+
+    <!----MAIN CONTENT START -------------->
 
     <main class="container-fluid">
         <section class="basket">

@@ -70,9 +70,9 @@
             border-radius: 5px;
 
             &.disable{
-                background-color: #343434!important;
-                color:#fff!important;
-                padding: 8px 15px !important;
+                background-color: #343434;
+                color:#fff;
+                padding: 8px 15px;
             }
 
         }
@@ -135,7 +135,7 @@
                 font-size: 18px;
             }
             &_btn{
-                padding: 15px 20px;
+                padding: 15px 20px!important;
                 font-size: 18px;
             }
         }
@@ -169,7 +169,7 @@
                 font-size: 14px;
             }
             &_btn{
-                padding: 10px 20px;
+                padding: 10px 20px!important;
             }
         }
 

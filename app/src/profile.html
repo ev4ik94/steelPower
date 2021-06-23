@@ -15,147 +15,348 @@
 </head>
 
 <body>
-    <!----------------------NAVBAR START--------------------->
-    <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-light navbar-expand-lg">
-                <div class="container-fluid ps-0">
-                    <button class="navbar__button_tog d-lg-none d-block" type="button" data-bs-toggle="collapse"
+<!----------------------NAVBAR START--------------------->
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light navbar-expand-lg">
+
+
+            <div class="container-fluid ps-0">
+
+                <button class="navbar__button_tog d-lg-none d-block" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="header__logo" href="#">
-                        <img src="./img/logo.svg" alt="">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="header__logo" href="/">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+
+                <!-- Не авторизованный пользователь START -->
+
+                <div class="authorization d-lg-none d-flex">
+                    <div class="authorization__info">
+                        <button class="authorization__login_img">
+                            <img src="./img/user.svg" alt="" class="align-text-bottom">
+                        </button>
+                    </div>
+
+                    <a href="/cart.html" class="authorization__mob_basket position-relative">
+                        <div class="authorization__mob_img">
+                            <img src="./img/basket.svg" alt="">
+                        </div>
+                        <span class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
                     </a>
-                    <!-- Не авторизованный пользователь -->
+                </div>
 
-                    <div class="authorization d-lg-none d-flex">
-                        <div class="authorization__info">
-                            <div class="authorization__login_img">
-                                <img src="./img/user.svg" alt="" class="align-text-bottom">
-                            </div>
-                            <div class="authorization__login">
-                                <button>Войти</button>
-                            </div>
-                            <span class="authorization__sp">/</span>
-                            <div class="authorization__register">
-                                <button>Зарегистрироваться</button>
-                            </div>
+                <!-- Не авторизованный пользователь END -->
+
+
+                <!-- Авторизованный пользователь START -->
+
+                <!--                    <div class="authorized-user d-flex">-->
+                <!--                        <a href="/profile.html" class="authorized-user__button">-->
+                <!--                            <img src="./img/user.svg" alt="">-->
+                <!--                        </a>-->
+                <!--                        <a href="/cart.html" class="authorized-user__info d-flex justify-content-between align-items-center">-->
+                <!--                            <div class="position-relative d-flex">-->
+                <!--                                <div>-->
+                <!--                                    <img src="./img/basket.svg" alt="">-->
+                <!--                                </div>-->
+                <!--                                <span class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
+                <!--                            </div>-->
+                <!--                            <p>Корзина</p>-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+
+                <!-- Авторизованный пользователь END -->
+
+                <div class="collapse navbar-collapse pt-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-lg-0 pt-3">
+                        <li class="nav-item d-lg-none d-block">
+                            <button class="btn-popup-forms header__link" data-id="form-signin">Войти</button>
+                        </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <button class="btn-popup-forms header__link" data-id="form-signup">Зарегистрироваться</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">Сотрудничество</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">SP-TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link" href="#">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Не авторизованный пользователь START -->
+                <div class="authorization d-lg-flex d-none">
+                    <div class="authorization__info">
+                        <div class="authorization__login_img">
+                            <img src="./img/user.svg" alt="" class="align-text-bottom">
                         </div>
-                        <button class="authorization__basket">
-                            <div class="authorization__basket_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <p class="authorization__basket_text">Корзина</p>
-                        </button>
-
-                        <button class="authorization__mob_basket position-relative">
-                            <div class="authorization__mob_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <span
-                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
-                        </button>
-                    </div>
-
-
-                    <!-- Авторизованный пользователь -->
-
-                    <!--                    <div class="authorized-user d-flex">-->
-                    <!--                        <button class="authorized-user__button">-->
-                    <!--                            <img src="./img/user.svg" alt="">-->
-                    <!--                        </button>-->
-                    <!--                        <button class="authorized-user__info d-flex justify-content-between align-items-center">-->
-                    <!--                            <div class="position-relative d-flex">-->
-                    <!--                                <div>-->
-                    <!--                                    <img src="./img/basket.svg" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <span-->
-                    <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
-                    <!--                            </div>-->
-                    <!--                            <p>Корзина</p>-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
-                    <div class="collapse navbar-collapse pt-lg-0 pt-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="header__link" href="#">О нас</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="header__link" href="#">Сотрудничество</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="header__link" href="#">SP-TEAM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="header__link" href="#">Доставка и оплата</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Не авторизованный пользователь -->
-
-
-                    <div class="authorization d-lg-flex d-none">
-                        <div class="authorization__info">
-                            <div class="authorization__login_img">
-                                <img src="./img/user.svg" alt="" class="align-text-bottom">
-                            </div>
-                            <div class="authorization__login">
-                                <button>Войти</button>
-                            </div>
-                            <span class="authorization__sp">/</span>
-                            <div class="authorization__register">
-                                <button>Зарегистрироваться</button>
-                            </div>
+                        <div class="authorization__login">
+                            <button class="btn-popup-forms" data-id="form-signin">Войти</button>
                         </div>
-                        <button class="authorization__basket">
-                            <div class="authorization__basket_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <p class="authorization__basket_text">Корзина</p>
-                        </button>
-
-                        <button class="authorization__mob_basket position-relative">
-                            <div class="authorization__mob_img">
-                                <img src="./img/basket.svg" alt="">
-                            </div>
-                            <span
-                                class="authorization__mob_text d-md-flex justify-content-md-center align-items-md-center position-absolute">10</span>
-                        </button>
+                        <span class="authorization__sp">/</span>
+                        <div class="authorization__register">
+                            <button class="btn-popup-forms" data-id="form-signup">Зарегистрироваться</button>
+                        </div>
                     </div>
-
-
-                    <!-- Авторизованный пользователь -->
-
-                    <!--                    <div class="authorized-user d-flex">-->
-                    <!--                        <button class="authorized-user__button">-->
-                    <!--                            <img src="./img/user.svg" alt="">-->
-                    <!--                        </button>-->
-                    <!--                        <button class="authorized-user__info d-flex justify-content-between align-items-center">-->
-                    <!--                            <div class="position-relative d-flex">-->
-                    <!--                                <div>-->
-                    <!--                                    <img src="./img/basket.svg" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <span-->
-                    <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
-                    <!--                            </div>-->
-                    <!--                            <p>Корзина</p>-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
+                    <a href="/cart.html" class="authorization__basket">
+                        <div class="authorization__basket_img">
+                            <img src="./img/basket.svg" alt="">
+                        </div>
+                        <p class="authorization__basket_text">Корзина</p>
+                    </a>
 
                 </div>
-            </nav>
+                <!-- Не авторизованный пользователь END -->
+
+
+                <!-- Авторизованный пользователь START -->
+
+                <!--                    <div class="authorized-user d-lg-flex d-none">-->
+                <!--                        <a href="/profile.html" class="authorized-user__button">-->
+                <!--                            <img src="./img/user.svg" alt="">-->
+                <!--                        </a>-->
+                <!--                        <a href="/cart.html" class="authorized-user__info d-flex justify-content-between align-items-center">-->
+                <!--                            <div class="position-relative d-flex">-->
+                <!--                                <div>-->
+                <!--                                    <img src="./img/basket.svg" alt="">-->
+                <!--                                </div>-->
+                <!--                                <span-->
+                <!--                                    class="position-absolute d-flex justify-content-between align-items-center">10</span>-->
+                <!--                            </div>-->
+                <!--                            <p>Корзина</p>-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+
+                <!-- Авторизованный пользователь END -->
+
+            </div>
+        </nav>
+    </div>
+</header>
+<!----------------------NAVBAR END--------------------->
+
+    <!-------------Forms Pop-up Start-------->
+    <div class="overlay-forms">
+        <div class="wrap-forms">
+            <!------------Form Authorization------------>
+            <div data-id="form-signup" class="d-none">
+                <form action="" class="col-lg-4 mx-auto bg-white">
+                    <div class="form__header ">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0">Регистрация</p>
+                            <button class="close-forms"><img src="./img/close.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="form__main">
+                        <div class="form__group">
+                            <p><label for="auth-lastname">Фамилия*</label></p>
+                            <input type="text" id="auth-lastname" name="lastName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-name">Имя*</label></p>
+                            <input type="text" id="auth-name" name="firstName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-fatherName">Отчество</label></p>
+                            <input type="text" id="auth-fatherName" name="fatherName">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-mail">Почта*</label></p>
+                            <input type="text" id="auth-mail" name="mail">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-password">Придумайте пароль*</label></p>
+                            <input type="text" id="auth-password" name="password">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-confirmPassword">Повторите пароль*</label></p>
+                            <input type="text" id="auth-confirmPassword" name="confirmPassword">
+                        </div>
+                        <div class="form__checkbox d-flex">
+                            <input type="checkbox">
+                            <label class="mb-0 position-relative col-11">Принимаю соглашение на обработку <a href="">персональных данных</a></label>
+                        </div>
+                        <button type="submit ">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!------------Form Login------------>
+            <div data-id="form-signin" class="d-none">
+                <form action="" class="col-lg-4 mx-auto bg-white">
+                    <div class="form__header ">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0">Вход</p>
+                            <button class="close-forms"><img src="./img/close.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="form__main">
+                        <div class="form__group">
+                            <p><label for="sigin-mail">Почта</label></p>
+                            <input type="text" id="sigin-mail" name="sigin-mail">
+                        </div>
+                        <div class="form__group">
+                            <p><label for="auth-lastname">Пароль</label></p>
+                            <input type="text" id="sigin-password" name="sigin-password">
+                        </div>
+                        <button type="submit">Войти</button>
+                        <a href="" class="form__sigin d-flex justify-content-center">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
         </div>
-    </header>
-    <!----------------------NAVBAR END--------------------->
+
+        <!----------Popup Block ------------->
+        <div class="d-flex justify-content-center d-none" id="popup" data-id="popup">
+
+            <div class="popup position-relative">
+                <button class="close-forms position-absolute"><img src="./img/close.svg" alt=""></button>
+                <div class="popup__img">
+                    <img src="./img/Popup.jpg" alt="">
+                </div>
+                <div class="popup__block">
+                    <p>Получите приглашение на закрытую распродажу</p>
+                    <input type="text" placeholder="Ваш email">
+                    <button>Получить</button>
+                    <div class="popup__check d-flex mt-3">
+                        <input type="checkbox" class="popup__checkbox">
+                        <label class="position-relative col-11">Я соглашаюсь с политикой в отношении обработки <a href="">персональных данных</a> и даю
+                            согласие на получение рекламных сообщений</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------- Form Change Profile START--------------->
+        <div data-id="change-profile" class="d-none">
+            <form action="" class="profile__form col-lg-5 mx-auto bg-white">
+                <div class="profile__form_top d-flex justify-content-between">
+                    <p>Редактирование профиля</p>
+                    <button class="close-forms"><img src="./img/close.svg" alt=""></button>
+                </div>
+                <div class="profile__form_input">
+                    <div>
+                        <label>Фамилия</label>
+                        <input type="text" placeholder="Admin" name="lastName">
+                    </div>
+                    <div>
+                        <label>Имя</label>
+                        <input type="text" placeholder="Admin" name="name">
+                    </div>
+                    <div>
+                        <label>Отчество</label>
+                        <input type="text" name="patronymic">
+                    </div>
+                    <div>
+                        <label>Почта</label>
+                        <input type="mail" placeholder="admin@admin.admin" name="postCode">
+                    </div>
+                    <div>
+                        <label>Номер телефона</label>
+                        <input type="text" name="phoneNumber">
+                    </div>
+                    <div>
+                        <label>Город</label>
+                        <input type="text" name="city">
+                    </div>
+                    <div>
+                        <label>Улица</label>
+                        <input type="text" name="street">
+                    </div>
+                    <div>
+                        <label>Дом</label>
+                        <input type="text" name="house">
+                    </div>
+                    <div class="profile__form_btn">
+                        <button class="profile__form_change">Изменить</button>
+                        <button class="profile__form_password btn-popup-forms" data-id="change-password">Изменить пароль</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-------- Form Change Profile START--------------->
+
+        <!------Form Change Password Start-------------->
+        <div data-id="change-password" class="d-none">
+            <form action="" class="profile__form col-lg-5 mx-auto bg-white">
+                <div class="profile__form_top d-flex justify-content-between">
+                    <p>Изменить пароль</p>
+                    <button class="close-forms"><img src="./img/close.svg" alt=""></button>
+                </div>
+                <div class="profile__form_input">
+                    <div>
+                        <input type="password" placeholder="Текущий пароль" name="current-password">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Новый пароль" name="new-password">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Подтверждение пароля" name="confirm-password">
+                    </div>
+                    <div class="profile__form_btn">
+                        <button class="profile__form_change">Изменить пароль</button>
+                        <button class="profile__form_password btn-popup-forms" data-id="change-profile">Редактировать профиль</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!------Form Change Password End-------------->
+
+
+        <!-------- Form New Performance Start----------->
+
+        <div data-id="new-performance" class="d-none">
+            <form action="" class="profile__form col-lg-5 mx-auto bg-white">
+                <div class="profile__form_top d-flex justify-content-between">
+                    <p>Новое выступление</p>
+                    <button class="close-forms"><img src="./img/close.svg" alt=""></button>
+                </div>
+                <div class="profile__form_input">
+                    <div>
+                        <label>Название</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <label>Результат</label>
+                        <input type="text" name="result">
+                    </div>
+                    <div>
+                        <label>Дата</label>
+                        <input type="date" name="date">
+                    </div>
+                    <div class="profile__form_btn">
+                        <button class="profile__form_change">Записать</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-------- Form New Performance End----------->
+
+    </div>
+    <!-------------Forms Pop-up Start End-------->
+
+    <!-------Main Content Start------------------>
+
     <main class="container-fluid profile">
         <section class="profile__info">
             <div class="profile__desc">
                 <div class="profile__name d-flex flex-column flex-lg-row">
                     <p>Фамилия Имя Отчество</p>
-                    <button class="col-lg-3 col-md-6 col-sm-9 col-12">Редактировать профиль</button>
+                    <button class="col-lg-3 col-md-6 col-sm-9 col-12 btn-popup-forms" data-id="change-profile">Редактировать профиль</button>
                 </div>
                 <div class="profile__score d-flex align-items-center">
                     <p>У меня <span>1000</span> баллов</p>
@@ -168,7 +369,7 @@
             <div class="profile__competition">
                 <div class="profile__competition_win d-flex flex-column flex-lg-row">
                     <p>Мои победы</p>
-                    <button class="col-lg-2 col-md-6 col-sm-9 col-12">Новое выступление</button>
+                    <button class="col-lg-2 col-md-6 col-sm-9 col-12 btn-popup-forms" data-id="new-performance">Новое выступление</button>
                 </div>
                 <div class="profile__competition_desc col-12 d-lg-flex justify-content-between d-none">
                     <p class="col-lg-2">Название</p>
@@ -256,20 +457,18 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button profile__history_info justify-content-between flex-lg-row flex-column" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <div
-                                class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
                                 <p>Заказ № <span>ХХХ</span></p>
                             </div>
-                            <div
-                                class="profile__history_item d-flex col-lg-6  justify-content-around align-items-center flex-lg-row flex-column">
+                            <div class="profile__history_item d-flex col-lg-6  justify-content-around align-items-center flex-lg-row flex-column">
                                 <p>20.11.2020</p>
                                 <span>2500 руб.</span>
                                 <div class="profile__history_repeat col-lg-3">Повторить заказ</div>
                             </div>
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column">
@@ -300,9 +499,8 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button profile__history_info justify-content-between flex-lg-row flex-column" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <div
-                                class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
                                 <p>Заказ № <span>ХХХ</span></p>
                             </div>
                             <div
@@ -313,7 +511,7 @@
                             </div>
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column">
@@ -344,9 +542,8 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button profile__history_info justify-content-between flex-lg-row flex-column" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <div
-                                class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="profile__history_number col-lg-6 col-12 d-flex align-items-center justify-content-lg-start justify-content-center">
                                 <p>Заказ № <span>ХХХ</span></p>
                             </div>
                             <div
@@ -357,7 +554,7 @@
                             </div>
                     </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="profile__history_uncover d-flex justify-content-between flex-lg-row flex-column">
@@ -386,94 +583,7 @@
                 </div>
             </div>
         </div>
-        <form action="" class="profile__form col-lg-5">
-            <div class="profile__form_top d-flex justify-content-between">
-                <p>Редактирование профиля</p>
-                <button><img src="./img/close.svg" alt=""></button>
-            </div>
-            <div class="profile__form_input">
-                <div>
-                    <label for="">Фамилия</label>
-                    <input type="text" placeholder="Admin">
-                </div>
-                <div>
-                    <label for="">Имя</label>
-                    <input type="text" placeholder="Admin">
-                </div>
-                <div>
-                    <label for="">Отчество</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Почта</label>
-                    <input type="mail" placeholder="admin@admin.admin">
-                </div>
-                <div>
-                    <label for="">Номер телефона</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Город</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Улица</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Дом</label>
-                    <input type="text">
-                </div>
-                <div class="profile__form_btn">
-                    <button class="profile__form_change">Изменить</button>
-                    <button class="profile__form_password">Изменить пароль</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="profile__form col-lg-5">
-            <div class="profile__form_top d-flex justify-content-between">
-                <p>Изменить пароль</p>
-                <button><img src="./img/close.svg" alt=""></button>
-            </div>
-            <div class="profile__form_input">
-                <div>
-                    <input type="text" placeholder="Текущий пароль">
-                </div>
-                <div>
-                    <input type="text" placeholder="Новый пароль">
-                </div>
-                <div>
-                    <input type="text" placeholder="Подтверждение пароля">
-                </div>
-                <div class="profile__form_btn">
-                    <button class="profile__form_change">Изменить пароль</button>
-                    <button class="profile__form_password">Редактировать профиль</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="profile__form col-lg-5">
-            <div class="profile__form_top d-flex justify-content-between">
-                <p>Новое выступление</p>
-                <button><img src="./img/close.svg" alt=""></button>
-            </div>
-            <div class="profile__form_input">
-                <div>
-                    <label for="">Название</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Результат</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Дата</label>
-                    <input type="date">
-                </div>
-                <div class="profile__form_btn">
-                    <button class="profile__form_change">Записать</button>
-                </div>
-            </div>
-        </form>
+
     </main>
     <!----------------------FOOTER START--------------------->
     <footer class="footer">
